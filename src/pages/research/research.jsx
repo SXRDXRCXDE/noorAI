@@ -5,7 +5,6 @@ import bg_research from "@/assets/images/bg_waves_cloud.png";
 import studentsPrepare from "@/assets/images/students_prepare.png";
 import Image from "next/image";
 import GradientButton from "@/components/GradientButton";
-import {Switcher} from "@/app/pages/pricing/pricing";
 import {useState} from "react";
 import LineChartComponent from "@/components/LineChartComponent/LineChartComponent";
 import BarchartComponent from "@/components/BarchartComponent/BarchartComponent";
@@ -14,7 +13,9 @@ import brain from "@/assets/images/brain.png";
 import book from "@/assets/images/book.png";
 import earphone from "@/assets/images/earphone.png";
 import library from "@/assets/images/library.png";
-import {Footer} from "@/app/pages/landing/landing";
+import {Footer} from "react-day-picker";
+import {Switcher} from "@/pages/pricingTwo/pricingTwo";
+
 
 
 

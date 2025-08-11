@@ -1,11 +1,19 @@
+"use client"
 import Header from "@/components/Header/Header";
 import Image from "next/image";
 import bg_pricing from "@/assets/images/bg_pricing.png";
-import {BadgePercent, Check, ChevronRight} from "lucide-react";
+import {CalendarDays, Check, ChevronLeft, ChevronRight} from "lucide-react";
 import GradientButton from "@/components/GradientButton";
 import paypal from "@/assets/images/paypal.png"
 import payooner from "@/assets/images/payooner.png"
 import {Input} from "@/components/ui/input";
+import Footer from "@/components/Footer/Footer";
+import {Popover, PopoverContent, PopoverTrigger} from "@/components/ui/popover";
+import { format } from "date-fns";
+import {useState} from "react";
+import PaymentMethod from "@/components/PaymentMethod/PaymentMethod";
+import {Calendar} from "@/components/ui/calendar";
+import "react-day-picker/dist/style.css";
 
 
 export default function PaymentPage() {
@@ -16,12 +24,57 @@ export default function PaymentPage() {
 
             <Section1/>
 
+            <Footer/>
+
         </div>
     );
 }
 
 
 export function Section1() {
+
+    const [date, setDate] = useState(null);
+    const [open, setOpen] = useState(false);
+
+    const [selected, setSelected] = useState("Paypal");
+
+    const methods = [
+        {
+            id: "Paypal",
+            logo: paypal,
+            name: "Paypal",
+            details: "yelenastacia99@gmail.com",
+        },
+        {
+            id: "Payoneer",
+            logo: payooner,
+            name: "Payoneer",
+            details: "8329 3288 823 ****",
+        },
+    ];
+
+    const [cardNumber, setCardNumber] = useState("");
+    const [cvv, setCvv] = useState("");
+
+    const formatCardNumber = (value) => {
+        // Remove all non-digits
+        const digits = value.replace(/\D/g, "");
+        // Limit to 16 digits
+        const limited = digits.slice(0, 16);
+        // Group every 4 digits with space
+        return limited.replace(/(.{4})/g, "$1 ").trim();
+    };
+
+    const handleChange = (e) => {
+        setCardNumber(formatCardNumber(e.target.value));
+    };
+
+    const handleChangeCvv = (e) => {
+        // Keep only digits, max 4 characters
+        const value = e.target.value.replace(/\D/g, "").slice(0, 4);
+        setCvv(value);
+    };
+
     return(
         <div className={`w-full h-[calc(804px+434px)] relative overflow-hidden`}>
 
@@ -67,35 +120,16 @@ export function Section1() {
 
                             <div className={`mt-[31px] w-full h-[2px] bg-gradient-to-r from-transparent via-white/20 to-transparent`}></div>
 
-                            <div className={`flex items-center gap-4 mt-5`}>
-
-                                <div className={`w-5 h-5 rounded-full bg-[#754BF3] centered`}>
-                                    <div className={`w-[6px] h-[6px] rounded-full bg-white`}></div>
-                                </div>
-
-                                <Image alt={`paypal`} className={`w-[100px] h-[67px] object-cover`} src={paypal}/>
-
-                                <div className={`flex flex-col items-start `}>
-                                    <span className={`text-white font-sfPro font-[590] text-[20px] leading-[140%] tracking-[1px]`}>Paypal</span>
-                                    <span className={`text-[#818B9C] font-sfPro font-normal text-[16px] leading-[160%] tracking-[1px]`}>yelenastacia99@gmail.com</span>
-                                </div>
-
-                            </div>
-
-                            <div className={`flex items-center gap-4 mt-5`}>
-
-                                <div className={`w-5 h-5 rounded-full border-2  centered`}>
-                                    <div className={`w-[6px] h-[6px] rounded-full bg-white opacity-0`}></div>
-                                </div>
-
-                                <Image alt={`payooner`} className={`w-[100px] h-[67px] object-cover`} src={payooner}/>
-
-                                <div className={`flex flex-col items-start `}>
-                                    <span className={`text-white font-sfPro font-[590] text-[20px] leading-[140%] tracking-[1px]`}>Payoneer</span>
-                                    <span className={`text-[#818B9C] font-sfPro font-normal text-[16px] leading-[160%] tracking-[1px]`}>8329 3288 823 ****</span>
-                                </div>
-
-                            </div>
+                            {methods.map((m) => (
+                                <PaymentMethod
+                                    key={m.id}
+                                    active={selected === m.id}
+                                    logo={m.logo}
+                                    name={m.name}
+                                    details={m.details}
+                                    onClick={() => setSelected(m.id)}
+                                />
+                            ))}
 
                             <div className={`w-full flex items-center justify-between mt-[30px]`}>
 
@@ -121,7 +155,52 @@ export function Section1() {
 
                                         <span className={` text-white font-sfPro font-[590] text-[16px] leading-[140%] tracking-[-0.2px]`}>Date d’expiration</span>
 
-                                        <Input placeholder={`Sélectionnez la date d’exp.`} type={`date`} className={`w-full bg-[#FFFFFF1A] h-[46px] rounded-[12px] border border-[#E4E9EE80] text-white placeholder:text-[#818B9C] font-sfPro font-normal text-[16px] leading-[160%] tracking-[0px]`}/>
+                                        <Popover open={open} onOpenChange={setOpen}>
+                                            <PopoverTrigger asChild>
+                                                <div className="relative w-full cursor-pointer">
+                                                    <Input
+                                                        placeholder="Sélectionnez la date d’exp."
+                                                        value={date ? format(date, "dd/MM/yyyy") : ""}
+                                                        readOnly
+                                                        className="w-full bg-[#FFFFFF1A] h-[46px] rounded-[12px] border border-[#E4E9EE80] text-white placeholder:text-[#818B9C] font-sfPro font-normal text-[16px] leading-[160%] pr-12"
+                                                    />
+                                                    <CalendarDays
+                                                        className="absolute right-3 top-1/2 -translate-y-1/2 text-white"
+                                                        size={20}
+                                                    />
+                                                </div>
+                                            </PopoverTrigger>
+
+                                            <PopoverContent
+                                                align="start"
+                                                className="w-auto p-0 bg-[#1F1F1F] border border-gray-700 rounded-lg"
+                                            >
+                                                <Calendar
+                                                    mode="single"
+                                                    selected={date}
+                                                    onSelect={(selected) => {
+                                                        setDate(selected)
+                                                        setOpen(false)
+                                                    }}
+                                                    classNames={{
+                                                        caption: "flex justify-center pt-1 relative items-center text-white",
+                                                        nav_button: "hover:bg-gray-800 text-white",
+                                                        nav_button_previous: "absolute left-1",
+                                                        nav_button_next: "absolute right-1",
+                                                        head_cell: "text-white font-medium text-[0.8rem]",
+                                                        cell: "h-9 w-9 centered text-center text-xs p-0 relative",
+                                                        day: "h-9 w-9 centered text-white hover:bg-gray-700 rounded-full",
+                                                        day_selected: "bg-blue-600 text-white hover:bg-blue-700 rounded-full",
+                                                        day_today: "border border-white text-white",
+                                                        months: "text-white",
+                                                    }}
+                                                    components={{
+                                                        IconLeft: () => <ChevronLeft className="h-4 w-4" />,
+                                                        IconRight: () => <ChevronRight className="h-4 w-4" />,
+                                                    }}
+                                                />
+                                            </PopoverContent>
+                                        </Popover>
 
                                     </div>
 
@@ -133,7 +212,12 @@ export function Section1() {
 
                                         <span className={` text-white font-sfPro font-[590] text-[16px] leading-[140%] tracking-[-0.2px]`}>Numéro de carte</span>
 
-                                        <Input placeholder={`0000 - 0000 - 0000 - 0000`} className={`w-full bg-[#FFFFFF1A] h-[46px] rounded-[12px] border border-[#E4E9EE80] text-white placeholder:text-[#818B9C] font-sfPro font-normal text-[16px] leading-[160%] tracking-[0px]`}/>
+                                        <Input
+                                            placeholder="0000 0000 0000 0000"
+                                            value={cardNumber}
+                                            onChange={handleChange}
+                                            className="w-full bg-[#FFFFFF1A] h-[46px] rounded-[12px] border border-[#E4E9EE80] text-white placeholder:text-[#818B9C] font-sfPro font-normal text-[16px] leading-[160%] tracking-[0px]"
+                                        />
 
                                     </div>
 
@@ -141,7 +225,14 @@ export function Section1() {
 
                                         <span className={` text-white font-sfPro font-[590] text-[16px] leading-[140%] tracking-[-0.2px]`}>CVV</span>
 
-                                        <Input placeholder={`Saisissez votre code CVV`} className={`w-full bg-[#FFFFFF1A] h-[46px] rounded-[12px] border border-[#E4E9EE80] text-white placeholder:text-[#818B9C] font-sfPro font-normal text-[16px] leading-[160%] tracking-[0px]`}/>
+                                        <Input
+                                            type="password"
+                                            placeholder="Saisissez votre code CVV"
+                                            value={cvv}
+                                            onChange={handleChangeCvv}
+                                            maxLength={4}
+                                            className="w-full bg-[#FFFFFF1A] h-[46px] rounded-[12px] border border-[#E4E9EE80] text-white placeholder:text-[#818B9C] font-sfPro font-normal text-[16px] leading-[160%] tracking-[0px]"
+                                        />
 
                                     </div>
 

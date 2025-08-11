@@ -3,7 +3,8 @@ import Image from "next/image";
 import bg_pricing from "@/assets/images/bg_pricing.png";
 import {Check} from "lucide-react";
 import GradientButton from "@/components/GradientButton";
-import {Footer} from "@/app/pages/landing/landing";
+import Footer from "@/components/Footer/Footer";
+
 
 
 export default function Checkout() {

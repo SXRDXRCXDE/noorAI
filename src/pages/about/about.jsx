@@ -4,12 +4,13 @@ import rasm from "@/assets/images/bg_stream.png";
 import robot from "@/assets/images/edited-robot.png";
 import doctors from "@/assets/images/doctor_kids.jpg";
 import rob_pencil from "@/assets/images/robot_pencil.png";
-import {BlurredBlob} from "@/app/pages/technology/technology";
 import bg_new from "@/assets/images/bg_new.png";
 import placeholder from "@/assets/images/placeholder_card.png";
 import nelson from "@/assets/images/nelson.png";
 import dot from "@/assets/images/greadient_dot.png";
-import {Footer} from "@/app/pages/landing/landing";
+import Footer from "@/components/Footer/Footer";
+import BlurredBlob from "@/components/BlurredBlob/BlurredBlob";
+
 
 
 
@@ -77,10 +78,10 @@ export function Section2() {
                             <span className={`text-[#00BFFF] font-sfPro font-medium text-2xl leading-none tracking-normal align-middle`}>
                                 Notre mission
                             </span>
-                            <span className={`mt-[28px] text-white font-sfPro font-bold text-5xl leading-[120%] tracking-normal`}>
+                        <span className={`mt-[28px] text-white font-sfPro font-bold text-5xl leading-[120%] tracking-normal`}>
                                 Transformer l'éducation grâce à l'IA, d'une manière inclusive et centrée sur l'humain.
                             </span>
-                            <span className={`mt-6 text-white font-sfPro font-normal text-2xl leading-none tracking-normal`}>
+                        <span className={`mt-6 text-white font-sfPro font-normal text-2xl leading-none tracking-normal`}>
                                 Nous croyons en une technologie qui éclaire, connecte et respecte chaque individu.
                             </span>
 
@@ -230,7 +231,7 @@ export function Section5() {
 
                 <div className={` flex items-center mt-[126px] gap-[94px] px-[120px]`}>
 
-                    {Reviews.map((value, index)=> <div className={'max-w-[572px] h-[255px] flex items-start gap-[38px]'}>
+                    {Reviews.map((value, index)=> <div key={index} className={'max-w-[572px] h-[255px] flex items-start gap-[38px]'}>
                         <Image
                             src={value.image}
                             alt="bg"

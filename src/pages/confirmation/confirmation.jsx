@@ -1,9 +1,9 @@
 import Image from "next/image";
 import bg_pricing from "@/assets/images/bg_pricing.png";
 import Header from "@/components/Header/Header";
-import {Footer} from "@/app/pages/landing/landing";
-import {FaCircleCheck} from "react-icons/fa6";
 import GradientButton from "@/components/GradientButton";
+import Footer from "@/components/Footer/Footer";
+import SuccessIcon from "@/components/SuccessIcon/SuccessIcon";
 
 
 export default function Confirmation() {
@@ -39,7 +39,7 @@ export default function Confirmation() {
 
                     <div className={`max-w-[880px] flex flex-col items-center `}>
 
-                        <FaCircleCheck color={`#20E643`} size={`138`}/>
+                        <SuccessIcon color={`#20E643`} width={138} height={138}/>
 
                     </div>
 

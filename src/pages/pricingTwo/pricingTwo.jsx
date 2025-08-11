@@ -12,8 +12,9 @@ import heart from "@/assets/images/hart_shape_hand.png";
 import teacher from "@/assets/images/robot_teach_kids.jpg";
 import ai from "@/assets/images/ai_language.jpg";
 import robotTeacher from "@/assets/images/robo_teach.jpg";
-import {NewsCard} from "@/app/pages/pricing/pricing";
-import {Footer} from "@/app/pages/landing/landing";
+import Footer from "@/components/Footer/Footer";
+import NewsCard from "@/components/NewsCard/NewsCard";
+
 
 
 export default function PricingTwo() {
