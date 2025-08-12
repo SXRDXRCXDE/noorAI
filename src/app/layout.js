@@ -1,12 +1,8 @@
-"use client";
-
-import { useEffect } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import { AuthProvider } from "@/app/context/AuthContext";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { headers } from "next/headers";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -18,13 +14,19 @@ const geistMono = Geist_Mono({
     subsets: ["latin"],
 });
 
+export const metadata = {
+    title: "NoorAI - Plateforme d’éducation AI",
+    description:
+        "Rejoignez NoorAI, la révolution pédagogique avec l'intelligence artificielle pour un apprentissage innovant.",
+};
+
 export default function RootLayout({ children }) {
-    useEffect(() => {
-        AOS.init({
-            duration: 800, // animation duration in ms
-            once: true,    // whether animation should happen only once
-        });
-    }, []);
+    // Get the current URL path on the server side
+    const headersList = headers();
+    const referer = headersList.get("referer") || "";
+    // Extract pathname from referer or default to "/"
+    const url = referer ? new URL(referer) : null;
+    const currentPathname = url ? url.pathname : "/";
 
     return (
         <html lang="fr">
@@ -32,7 +34,8 @@ export default function RootLayout({ children }) {
             className={`${geistSans.variable} ${geistMono.variable} antialiased w-full h-auto overflow-x-hidden`}
         >
         <AuthProvider>
-            <Header />
+            {/* Pass pathname as prop to Header */}
+            <Header currentPathname={currentPathname} />
             <main>{children}</main>
         </AuthProvider>
         </body>

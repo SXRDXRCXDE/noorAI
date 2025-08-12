@@ -1,4 +1,3 @@
-import React from 'react';
 
 const LightBlobSvg = ({ width = 533, height = 492, ...props }) => (
     <svg

@@ -1,6 +1,7 @@
 import Login from "@/pages/login/login";
+import AOSWrapper from "@/app/context/AOSWrapper";
 
 
 export default function Page() {
-    return <Login />;
+    return <AOSWrapper><Login /></AOSWrapper>;
 }

@@ -1,67 +1,61 @@
-"use client"; // Needed for usePathname
-
+// app/components/Header/Header.jsx (SERVER COMPONENT by default)
 import Link from "next/link";
-import GradientButton from "@/components/GradientButton";
 import NoorAiLogo from "@/components/NoorAiLogo/NoorAiLogo";
+import GradientButton from "@/components/GradientButton";
 import CartIcon from "@/components/CartIcon/CartIcon";
-import { usePathname } from "next/navigation";
+import HeaderMobileMenu from "@/components/HeaderMobileMenu/HeaderMobileMenu";
 
-export default function Header() {
-    const pathname = usePathname();
+const Navbar = [
+    { title: "Accueil", link: "/register" },
+    { title: "Technologies", link: "/technology" },
+    { title: "À propos", link: "/about" },
+    { title: "Recherches", link: "/research" },
+    { title: "Tarifs", link: "/pricing" },
+];
 
-    const Navbar = [
-        { title: "Accueil", link: "/register" },
-        { title: "Technologies", link: "/technology" },
-        { title: "À propos", link: "/about" },
-        { title: "Recherches", link: "/research" },
-        { title: "Tarifs", link: "/pricing" },
-    ];
-
-    function Logo() {
-        return (
-            <Link href="/" className="flex items-center">
-                <NoorAiLogo className="text-white" width={35} height={35} />
-                <span className="ml-[7px] text-white font-sfPro font-semibold text-2xl leading-tight tracking-tight text-center align-middle">
-                    NoorAI
-                </span>
-            </Link>
-        );
-    }
+export default function Header({ currentPathname = "/" }) {
+    const isAuthPage =
+        currentPathname === "/login" || currentPathname === "/register";
+    const bgClass = isAuthPage ? "bg-[#28262e]" : "bg-black/30";
 
     return (
-        <div className={`z-50 fixed top-0 left-0 w-full h-[104px] duration-300 ${pathname === "/login" || pathname === "/register" ? "bg-[#28262e]" : "bg-black/30"}` }>
-            <div className="w-full h-full flex items-center px-[133px] justify-between">
-                <Logo />
+        <header
+            className={`z-50 fixed top-0 left-0 w-full h-[104px] duration-300 ${bgClass}`}
+        >
+            {/* Mobile */}
+            <div className="w-full h-full min-[1200px]:hidden">
+                <HeaderMobileMenu navbar={Navbar} bgClass={bgClass} />
+            </div>
 
-                <div className="flex items-center gap-10 ml-[41px]">
-                    {Navbar.map((value, index) => {
-                        const isActive = pathname === value.link;
-                        return (
-                            <Link
-                                key={index}
-                                href={value.link}
-                                className={`pb-1 transition ${
-                                    isActive
-                                        ? "border-b-2 border-[#00BFFF] text-white"
-                                        : "border-b-2 border-transparent text-white hover:opacity-80"
-                                } font-sfPro font-[440] text-[16px] leading-[100%] tracking-[1px] align-middle`}
-                            >
-                                {value.title}
-                            </Link>
-                        );
-                    })}
-                </div>
+            {/* Desktop */}
+            <div className="w-full h-full items-center max-[1200px]:hidden flex px-[133px] max-[1300px]:px-[50px] justify-between">
+                <Link href="/" className="flex items-center">
+                    <NoorAiLogo className="text-white shrink-0" width={35} height={35} />
+                    <span className="ml-[7px] text-white font-sfPro font-semibold text-2xl leading-tight tracking-tight">
+            NoorAI
+          </span>
+                </Link>
+
+                <nav className="flex items-center gap-10 ml-[41px]">
+                    {Navbar.map((item) => (
+                        <Link
+                            key={item.link}
+                            href={item.link}
+                            className={`pb-1 border-b-2 border-transparent text-white hover:opacity-80 font-sfPro font-[440] text-[16px] tracking-[1px]`}
+                        >
+                            {item.title}
+                        </Link>
+                    ))}
+                </nav>
 
                 <div className="flex items-center gap-4">
                     <div className="gradient_border_button centered relative text-white w-[160px] h-[46px]">
                         <div className="w-full h-full bg-[#FFFFFF33] rounded-[19px] centered">
-                            <span className="text-[16px] font-sfPro font-medium leading-[100%] text-center align-middle">
-                                Voir la démo
-                            </span>
+                            <span className="text-[16px] font-sfPro font-medium">Voir la démo</span>
                         </div>
                     </div>
 
-                    <GradientButton className="text-white rounded-full w-[160px] h-[46px] font-sfPro font-bold text-[16px] leading-[140%] tracking-[-0.2px] text-center">
+                    <GradientButton className="text-white rounded-full w-[160px] h-[46px] font-sfPro font-bold text-[16px]">
                         Se connecter
                     </GradientButton>
 
@@ -72,6 +66,6 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     );
 }

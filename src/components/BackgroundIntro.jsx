@@ -5,7 +5,7 @@ import rasm from "@/assets/images/bg_waves.jpg";
 
 export default function BackgroundIntro() {
     return (
-        <div className="w-full h-[calc(100vh-40px)] relative ">
+        <div className="w-full max-[980px]:h-[calc(1024px-40px)] h-[calc(100vh-40px)] relative ">
             {/* Corners */}
             <div className="absolute -bottom-[5px] -left-[5.5px] z-10">
                 <PlusSvg />
