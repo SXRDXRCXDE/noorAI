@@ -140,6 +140,27 @@
 
 /*}*/
 
+
+@keyframes floatDot {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(5px, -5px); }
+  50%  { transform: translate(0, -10px); }
+  75%  { transform: translate(-5px, -5px); }
+  100% { transform: translate(0, 0); }
+}
+
+.dot-anim {
+  animation: floatDot 4s ease-in-out infinite;
+}
+
+.anim-delay-200  { animation-delay: 0.2s; }
+.anim-delay-400  { animation-delay: 0.4s; }
+.anim-delay-600  { animation-delay: 0.6s; }
+.anim-delay-800  { animation-delay: 0.8s; }
+.anim-delay-1000 { animation-delay: 1s; }
+
+
+
 .card_linear {
   padding: 1.5px;
   display: inline-block;

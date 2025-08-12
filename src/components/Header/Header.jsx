@@ -29,7 +29,7 @@ export default function Header() {
     }
 
     return (
-        <div className={`z-50 fixed top-0 left-0 w-full h-[104px] duration-300 ${pathname === "/login" || pathname === "/register" ? "bg-[#28262e]" : "bg-[#FFFFFF1C]"}` }>
+        <div className={`z-50 fixed top-0 left-0 w-full h-[104px] duration-300 ${pathname === "/login" || pathname === "/register" ? "bg-[#28262e]" : "bg-black/30"}` }>
             <div className="w-full h-full flex items-center px-[133px] justify-between">
                 <Logo />
 
