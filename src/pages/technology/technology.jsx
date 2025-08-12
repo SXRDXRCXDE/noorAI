@@ -318,14 +318,14 @@ export function Section5() {
             <div className={`absolute -left-[451px] top-0 blur-[474px] w-[1027px] h-[1027px] rounded-full bg-[#063532]`}></div>
             <div className={`absolute -right-[249px] -top-[14px] blur-[794px] w-[761px] h-[761px] rounded-full bg-[#240379]`}></div>
             <div className={`absolute -right-[259px] -bottom-[calc(171px+289px)] blur-[474px] w-[1027px] h-[1027px] rounded-full bg-[#06303F]`}></div>
-            <WhiteGradientBlob width={488} height={460} className="absolute max-[420px]:top-[615px] max-[980px]:w-[388px] max-[980px]:h-[360px] max-[980px]:right-[18px] max-[1200px]:right-[48px] top-[265px] right-[148px] backdrop_blur-[123px]" />
-            <WhiteGradientBlob width={437} height={412} className="absolute max-[420px]:top-[639px] max-[980px]:w-[337px] max-[980px]:h-[312px] max-[980px]:right-[34px] max-[1200px]:right-[74px] top-[289px] right-[174px] backdrop_blur-[123px]" />
+            <WhiteGradientBlob width={488} height={460} className="absolute max-[420px]:right-0 max-[420px]:left-0 max-[420px]:m-auto max-[420px]:top-[615px] max-[980px]:w-[388px] max-[980px]:h-[360px] max-[980px]:right-[18px] max-[1200px]:right-[48px] top-[265px] right-[148px] backdrop_blur-[123px]" />
+            <WhiteGradientBlob width={437} height={412} className="absolute max-[420px]:right-0 max-[420px]:left-0 max-[420px]:m-auto max-[420px]:top-[639px] max-[980px]:w-[337px] max-[980px]:h-[312px] max-[980px]:right-[34px] max-[1200px]:right-[74px] top-[289px] right-[174px] backdrop_blur-[123px]" />
             <Image
                 data-aos={`zoom-in`}
                 data-aos-delay={`500`}
                 src={cartoon}
                 alt="bg"
-                className="absolute max-[420px]:top-[566px] max-[980px]:w-[376px] max-[980px]:h-[419px] max-[980px]:right-[30px] max-[1200px]:right-[80px] right-[180px] top-[216px] object-cover w-[476px] h-[519px] object-cover "
+                className="absolute max-[420px]:right-0 max-[420px]:left-0 max-[420px]:m-auto max-[420px]:top-[566px] max-[980px]:w-[376px] max-[980px]:h-[419px] max-[980px]:right-[30px] max-[1200px]:right-[80px] right-[180px] top-[216px] object-cover w-[476px] h-[519px] object-cover "
             />
             <div className={`absolute left-0 top-0 w-full h-full pt-[114px] flex flex-col items-center`}>
 
