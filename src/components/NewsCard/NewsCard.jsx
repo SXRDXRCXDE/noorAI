@@ -1,50 +1,45 @@
 import Image from "next/image";
-import {ArrowRight, CalendarRange} from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
-export default function NewsCard({
-                             image,
-                             tag = "ai revelation",
-                             date = "15 Sep, 2021",
-                             title,
-                             onReadMore
-                         }) {
+export default function NewsCard({ title, date, excerpt, image, slug }) {
+    // Use a fallback for the slug to prevent broken links
+    const cardLink = slug ? `/news/${slug}` : "#";
+
     return (
-        <div className="w-[385px] h-[487px] rounded-[30px] relative overflow-hidden">
-            {/* Background Image */}
-            <Image
-                src={image}
-                alt="news"
-                className="object-cover w-full h-full"
-            />
+        <div
+            className="card_linear max-[1200px]:w-[280px] w-[380px] relative"
+            style={{ minHeight: "532px" }}
+        >
+            {/* The entire card is now a link for better user experience and SEO */}
+            <a href={cardLink} className="absolute left-0 top-0 w-full h-full rounded-[40px] overflow-hidden">
+                <Image
+                    src={image}
+                    alt={title}
+                    className="w-full h-full object-cover rounded-t-[40px]"
+                    priority={false} // `priority` should be used sparingly for LCP images
+                    sizes="(max-width: 1200px) 280px, 380px" // Add `sizes` attribute
+                />
+            </a>
 
-            {/* Gradient Overlay */}
-            <div className="absolute left-0 bottom-0 bg-gradient-to-b from-transparent to-black/70 flex items-end w-full h-[243px]">
-                <div className="w-full h-[182px] p-[28px] flex flex-col items-start">
+            <div className="absolute bottom-0 left-0 w-full h-1/2 p-[25px]">
+                <p className="text-[#E4E4E4] text-[16px] mb-[8px]">{date}</p>
 
-                    {/* Tag + Date */}
-                    <div className="flex items-center">
-                        <div className="px-[10px] py-[5px] rounded-full bg-[#FFC759] font-inter font-medium text-[10.91px] leading-[100%] tracking-[0.01em] text-center uppercase">
-                            {tag}
-                        </div>
-                        <div className="flex items-center ml-[15px] text-white gap-[6px] font-sfPro font-medium text-[14.55px] leading-[21.82px] tracking-[0] text-center">
-                            <CalendarRange size={15} />
-                            <span>{date}</span>
-                        </div>
-                    </div>
+                <h3 className="font-sfPro font-bold text-[22px] leading-[28px] text-white line-clamp-2">
+                    {title}
+                </h3>
 
-                    {/* Title */}
-                    <span className="text-white line-clamp-2 mt-[11px] font-sfPro font-medium text-[18px] leading-[25.45px] tracking-[0]">
-            {title}
-          </span>
+                <p className="text-[#BEBEBE] text-[16px] leading-[24px] mt-[12px] line-clamp-3">
+                    {excerpt}
+                </p>
 
-                    {/* Read More */}
-                    <button
-                        onClick={onReadMore}
-                        className="text-white flex items-center gap-[7px] mt-[11px] font-sfPro font-medium text-[18px] leading-[25.45px] tracking-[0]"
-                    >
-                        Read More <ArrowRight size={21} />
-                    </button>
-                </div>
+                {/* This link is now redundant, but you can keep it as a visual element.
+            It's better to wrap the entire card in a single link. */}
+                <a
+                    href={cardLink}
+                    className="text-white flex items-center gap-[7px] mt-[11px] font-sfPro font-medium text-[18px] leading-[25.45px]"
+                >
+                    Read More <ArrowRight size={21} />
+                </a>
             </div>
         </div>
     );

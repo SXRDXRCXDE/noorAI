@@ -1,3 +1,5 @@
+"use client";
+
 import {
     LineChart,
     Line,
@@ -7,6 +9,7 @@ import {
     ResponsiveContainer,
     CartesianGrid,
 } from 'recharts';
+import { useEffect, useState } from 'react';
 
 const data = [
     { name: '1', primaryLine: 68, secondaryLine: 62 },
@@ -30,70 +33,64 @@ const customTickStyle = {
     fill: '#fff',
 };
 
-const CustomDot = (props) => {
-    const { cx, cy } = props;
-    return (
-        <svg x={cx - 12} y={cy - 12} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="12" r="11" stroke="white" strokeWidth="1"/>
-            <circle cx="12" cy="12" r="11" fill="#95A4FC"/>
-            <circle cx="12" cy="12" r="7" fill="white"/>
-        </svg>
-    );
-};
+const CustomDot = ({ cx, cy }) => (
+    <svg
+        x={cx - 12}
+        y={cy - 12}
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <circle cx="12" cy="12" r="11" stroke="white" strokeWidth="1" />
+        <circle cx="12" cy="12" r="11" fill="#95A4FC" />
+        <circle cx="12" cy="12" r="7" fill="white" />
+    </svg>
+);
 
-const LineChartComponent = () => {
-    const pointCount = data.length;
-    const desiredPointSpacing = 82;
-    const requiredWidth = (pointCount - 1) * desiredPointSpacing;
+export default function LineChartComponent() {
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-    // New style object for the X-axis label
+    useEffect(() => {
+        const checkSize = () => setIsSmallScreen(window.innerWidth <= 1200);
+        checkSize();
+        window.addEventListener("resize", checkSize);
+        return () => window.removeEventListener("resize", checkSize);
+    }, []);
+
     const labelStyle = {
-
         fontWeight: '510',
         fontSize: '32px',
         lineHeight: '150%',
-        letterSpacing: '-0.04em', // -4% is equivalent to -0.04em
+        letterSpacing: '-0.04em',
         textAlign: 'center',
         fill: '#fff',
     };
 
     return (
-        <div className={`font-sfPro`} style={{ width: '100%', height: `100%`, padding: '0', borderRadius: '10px' }}>
-            <ResponsiveContainer className={`outline-0`} style={{
-                outline:`none`
-            }} width="100%" height="100%">
+        <div className="font-sfPro" style={{ width: '100%', height: '100%', borderRadius: '10px' }}>
+            <ResponsiveContainer width="100%" height="100%">
                 <LineChart
-                    className={`outline-0`}
                     data={data}
                     margin={{
                         top: 5,
                         right: 30,
-                        left: 152,
+                        left: isSmallScreen ? 30 : 152,
                         bottom: 5,
                     }}
-                    style={{
-                        outlineColor:`transparent`,
-                        outline: 'none',
-                        border: 'none',
-                    }}
                 >
-                    <CartesianGrid vertical={true} horizontal={false} strokeDasharray="3 3" stroke="#444" />
+                    <CartesianGrid vertical horizontal={false} strokeDasharray="3 3" stroke="#444" />
 
                     <XAxis
                         dataKey="name"
-                        // Applied the new style to the label
-                        label={{
-                            position: 'insideBottom',
-                            offset: -5,
-                            style: labelStyle
-                        }}
+                        label={{ position: 'insideBottom', offset: -5, style: labelStyle }}
                         axisLine={false}
                         tickLine={false}
                         stroke="#fff"
-                        tick={props => (
+                        tick={(props) => (
                             <g transform={`translate(${props.x},${props.y})`}>
                                 <text
-                                    {...props}
                                     y={props.dy + 16}
                                     x={0}
                                     textAnchor="middle"
@@ -111,19 +108,21 @@ const LineChartComponent = () => {
                         axisLine={false}
                         tickLine={false}
                         stroke="#fff"
-                        tick={props => (
-                            <g transform={`translate(${props.x},${props.y})`}>
-                                <text
-                                    {...props}
-                                    x={-145}
-                                    y={0}
-                                    textAnchor="start"
-                                    style={customTickStyle}
-                                >
-                                    {props.payload.value}
-                                </text>
-                            </g>
-                        )}
+                        tick={(props) => {
+                            const xOffset = isSmallScreen ? -50 : -145;
+                            return (
+                                <g transform={`translate(${props.x},${props.y})`}>
+                                    <text
+                                        x={xOffset}
+                                        y={0}
+                                        textAnchor="start"
+                                        style={customTickStyle}
+                                    >
+                                        {props.payload.value}
+                                    </text>
+                                </g>
+                            );
+                        }}
                     />
 
                     <Tooltip
@@ -152,6 +151,4 @@ const LineChartComponent = () => {
             </ResponsiveContainer>
         </div>
     );
-};
-
-export default LineChartComponent;
+}
