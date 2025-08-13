@@ -1,7 +1,8 @@
 
 import PaymentPage from "@/pages/paymentPage/paymentPage";
+import AOSWrapper from "@/app/context/AOSWrapper";
 
 
 export default function Page() {
-    return <PaymentPage />;
+    return <AOSWrapper><PaymentPage /></AOSWrapper>;
 }

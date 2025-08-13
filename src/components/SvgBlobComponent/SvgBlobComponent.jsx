@@ -1,6 +1,7 @@
 export default function SvgBlobComponent({ width = 615, height = 581, className = "" }) {
     return (
         <svg
+            data-aos={`zoom-in`}
             width={width}
             height={height}
             viewBox="0 0 615 581"

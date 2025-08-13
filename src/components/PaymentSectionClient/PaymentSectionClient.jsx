@@ -76,7 +76,7 @@ export function GradientBadgePercent({ size = 20 }) {
     );
 }
 
-export default function PaymentSectionClient() {
+export default function  PaymentSectionClient() {
     const [date, setDate] = useState(null);
     const [open, setOpen] = useState(false);
     const [selected, setSelected] = useState("Paypal");
@@ -134,9 +134,9 @@ export default function PaymentSectionClient() {
                 </div>
             </div>
             <div className={`absolute left-0 top-0 flex flex-col items-center w-full h-full pt-[285px] max-[1200px]:px-[30px] px-[120px]`}>
-                <span className={`text-white font-sfPro font-bold max-[980px]:text-[32px] text-[48px] leading-[100%] tracking-[0] text-center align-middle`}>Paiement</span>
-                <span className={`text-white font-sfPro font-normal max-[980px]:text-[20px] text-[24px] leading-[150%] tracking-[0] text-center`}>Résumé de votre sélection</span>
-                <div className={`checkout_card mt-[60px] w-full max-[450px]:h-[1254px] h-[724px]`}>
+                <span data-aos={`fade-down`} data-aos-delay={`500`} className={`text-white font-sfPro font-bold max-[980px]:text-[32px] text-[48px] leading-[100%] tracking-[0] text-center align-middle`}>Paiement</span>
+                <span data-aos={`fade-down`} data-aos-delay={`1000`} className={`text-white font-sfPro font-normal max-[980px]:text-[20px] text-[24px] leading-[150%] tracking-[0] text-center`}>Résumé de votre sélection</span>
+                <div data-aos={`fade-down`} data-aos-delay={`2000`} className={`checkout_card mt-[60px] w-full max-[450px]:h-[1254px] h-[724px]`}>
                     <div className={`w-full h-full bg-[#FFFFFF14] backdrop-blur-[254px] rounded-[30px] flex max-[450px]:flex-col items-center justify-between `}>
                         <div className={`w-2/3 max-[450px]:w-full h-full flex flex-col items-start py-[82px] max-[450px]:py-[20px] max-[1200px]:px-[20px] px-[64px]`}>
                             <div className={`w-full flex items-center justify-between`}>

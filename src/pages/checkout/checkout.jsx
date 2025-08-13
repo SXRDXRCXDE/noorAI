@@ -45,10 +45,10 @@ function Section1() {
 
             <div className={`absolute left-0 top-0 flex flex-col items-center w-full h-full pt-[285px] max-[980px]:pt-[185px] max-[980px]:px-[20px] max-[1200px]:px-[60px] px-[120px]`}>
 
-                <span className={`text-white font-sfPro font-bold max-[980px]:text-[32px] text-[48px] leading-[100%] tracking-[0] text-center align-middle`}>Paiement</span>
-                <span className={`text-white font-sfPro font-normal max-[980px]:text-[20px] text-[24px] leading-[150%] tracking-[0] text-center`}>Résumé de votre sélection</span>
+                <span data-aos={`fade-down`} data-aos-delay={`500`} className={`text-white font-sfPro font-bold max-[980px]:text-[32px] text-[48px] leading-[100%] tracking-[0] text-center align-middle`}>Paiement</span>
+                <span data-aos={`fade-down`} data-aos-delay={`1500`} className={`text-white font-sfPro font-normal max-[980px]:text-[20px] text-[24px] leading-[150%] tracking-[0] text-center`}>Résumé de votre sélection</span>
 
-                <div className={`checkout_card mt-[60px] w-full max-[420px]:h-[1023px] h-[603px]`}>
+                <div data-aos={`fade-down`} data-aos-delay={`2500`} className={`checkout_card mt-[60px] w-full max-[420px]:h-[1023px] h-[603px]`}>
                     <div className={`w-full h-full bg-[#FFFFFF14] backdrop-blur-[254px] rounded-[30px] flex max-[420px]:flex-col items-center justify-between`}>
 
                         {/* LEFT COLUMN */}

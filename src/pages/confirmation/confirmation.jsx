@@ -3,6 +3,7 @@ import bg_pricing from "@/assets/images/bg_pricing.png";
 import GradientButton from "@/components/GradientButton";
 import Footer from "@/components/Footer/Footer";
 import SuccessIcon from "@/components/SuccessIcon/SuccessIcon";
+import GradientBorderButton from "@/components/GradientBorderButton/GradientBorderButton";
 
 export default function Confirmation() {
     return (
@@ -34,32 +35,35 @@ export default function Confirmation() {
 
                 <div className={`absolute left-0 top-0 pt-[212px] w-full flex flex-col items-center`}>
 
-                    <div className={`max-w-[880px] flex flex-col items-center`}>
+                    <div data-aos={`zoom-in`} data-aos-delay={`500`} data-aos-duration={`1000`} className={`max-w-[880px] flex flex-col items-center`}>
                         <SuccessIcon color={`#20E643`} width={138} height={138} />
                     </div>
 
                     <div className={`flex flex-col items-center mt-[32px]`}>
-                        <span className={`text-white font-sfPro font-[860] text-[32px] leading-[140%] tracking-[-0.2px] text-center`}>
+                        <span data-aos={`fade-down`} data-aos-delay={`1500`} className={`text-white font-sfPro font-[860] text-[32px] leading-[140%] tracking-[-0.2px] text-center`}>
                             Votre paiement a été effectué avec succès
                         </span>
-                        <span className={`text-[#818B9C] mt-[12px] max-w-[600px] font-sfPro font-[510] text-[18px] leading-[160%] tracking-[0px] text-center`}>
+                        <span data-aos={`fade-down`} data-aos-delay={`2000`} className={`text-[#818B9C] mt-[12px] max-w-[600px] font-sfPro font-[510] text-[18px] leading-[160%] tracking-[0px] text-center`}>
                             Votre paiement sera traité dans les 30 minutes.<br />
                             En cas de problème, veuillez contacter le service client par chat.<br />
                             Les informations détaillées seront affichées ci-dessous.
                         </span>
 
                         <div className={`flex items-center gap-4 mt-[62px]`}>
-                            <div className={'gradient_border_button centered relative text-white w-[160px] h-[46px]'}>
-                                <div className={'w-full h-full bg-[#FFFFFF33] rounded-full centered'}>
-                                    <span className={`text-[16px] font-sfPro font-medium leading-[100%] text-center align-middle`}>
-                                        Voir les détails
-                                    </span>
-                                </div>
+                            <div data-aos={`fade-down`} data-aos-delay={`2200`}>
+                                <GradientBorderButton
+                                    text={`Voir les détails`}
+                                    className={`gradient_border_button centered relative text-white w-[160px] h-[46px]`}
+                                    innerDivClass={`w-full h-full bg-[#FFFFFF33] rounded-full centered`}
+                                    textClassName={`text-[16px] font-sfPro font-medium leading-[100%] text-center align-middle`}
+                                />
                             </div>
 
-                            <GradientButton className={`text-white rounded-full w-[160px] h-[46px] font-sfPro font-bold text-[16px] leading-[140%] tracking-[-0.2px] text-center`}>
-                                Retour à l’accueil
-                            </GradientButton>
+                            <div data-aos={`fade-down`} data-aos-delay={`2200`}>
+                                <GradientButton className={`text-white rounded-full w-[160px] h-[46px] font-sfPro font-bold text-[16px] leading-[140%] tracking-[-0.2px] text-center`}>
+                                    Retour à l’accueil
+                                </GradientButton>
+                            </div>
                         </div>
                     </div>
 

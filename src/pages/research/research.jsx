@@ -57,6 +57,7 @@ export function Section1() {
             <SvgBlobComponent width={651} height={590} className=" absolute max-[420px]:bottom-[453px] max-[980px]:bottom-[281px] max-[980px]:w-[351px] max-[980px]:h-[290px] max-[1200px]:right-[5px] right-[85px] bottom-[81px] " />
             <SvgBlobComponent width={602} height={546} className="absolute max-[420px]:bottom-[472px] max-[980px]:bottom-[303px] max-[980px]:w-[302px] max-[980px]:h-[246px] max-[1200px]:right-[30px] right-[110px] bottom-[103px] " />
             <Image
+                data-aos={`zoom-in`} data-aos-delay={`500`}
                 src={studentsPrepare}
                 alt="bg"
                 className="absolute max-[420px]:bottom-[517px] max-[980px]:bottom-[345px] max-[980px]:w-[213px] max-[980px]:h-[213px] max-[1200px]:right-[69px] right-[149px] max-[1200px]:bottom-[155px] bottom-[145px] object-contain max-[1200px]:w-[463px] max-[1200px]:h-[463px] w-[513px] h-[513px]  "
@@ -65,18 +66,20 @@ export function Section1() {
                 <div className={`max-[1200px]:max-w-[500px] max-[1300px]:max-w-[600px] max-w-[700px] h-full flex flex-col items-start `}>
                     <div className={`w-full flex flex-col items-start`}>
 
-                            <span className={`text-[#00BFFF] font-sfPro font-medium max-[420px]:text-sm max-[1200px]:text-xl text-2xl leading-none tracking-normal align-middle`}>
+                            <span data-aos={`fade-right`} className={`text-[#00BFFF] font-sfPro font-medium max-[420px]:text-sm max-[1200px]:text-xl text-2xl leading-none tracking-normal align-middle`}>
                                 Impact social et pédagogique
                             </span>
-                        <span className={`mt-[28px] text-white font-sfPro font-bold max-[420px]:text-xl max-[1300px]:text-3xl text-[48px] leading-[120%] tracking-normal`}>
+                        <span data-aos={`fade-right`} data-aos-delay={`1000`} className={`mt-[28px] text-white font-sfPro font-bold max-[420px]:text-xl max-[1300px]:text-3xl text-[48px] leading-[120%] tracking-normal`}>
                                 NoorAI réduit le stress scolaire, renforce la confiance en soi et favorise l’engagement.
                             </span>
-                        <span className={`mt-[26px] max-[420px]:mt-[13px] text-white font-sfPro font-normal max-[420px]:text-sm text-2xl leading-8 tracking-normal`}>
+                        <span data-aos={`fade-right`} data-aos-delay={`1500`} className={`mt-[26px] max-[420px]:mt-[13px] text-white font-sfPro font-normal max-[420px]:text-sm text-2xl leading-8 tracking-normal`}>
                                 Chaque fonctionnalité est fondée sur des recherches scientifiques rigoureuses, évaluées par des pairs.
                                 Combinaison des dernières avancées en matière de neurosciences, de psychologie cognitive et d'IA éducative pour construire un outil complet.
                             </span>
 
-                        <GradientButton className={`max-[420px]:w-[258px] max-[420px]:h-[55px] w-[358px] h-[69px] rounded-full mt-[32px] text-white font-sfPro font-medium max-[420px]:tet-[18px] text-[24px] leading-[100%] tracking-[0] align-middle`}>Voir NoorAI en action</GradientButton>
+                        <div data-aos={`fade-right`} data-aos-delay={`2000`}>
+                            <GradientButton className={`max-[420px]:w-[258px] max-[420px]:h-[55px] w-[358px] h-[69px] rounded-full mt-[32px] text-white font-sfPro font-medium max-[420px]:tet-[18px] text-[24px] leading-[100%] tracking-[0] align-middle`}>Voir NoorAI en action</GradientButton>
+                        </div>
 
                     </div>
                 </div>
@@ -121,18 +124,18 @@ export function Section2() {
             <div className={`absolute -left-[305px] bottom-[199px] w-[972px] h-[972px] rounded-full bg-[#0C2064] blur-[804px]`}></div>
             <div className={`absolute left-0 top-0 w-full h-full flex flex-col items-center  pt-[64px]`}>
                 <div className={`w-full max-w-[1000px] flex flex-col items-center text-center`}>
-                        <span className={`text-[#00BFFF] font-sfPro font-medium text-2xl leading-none tracking-normal align-middle`}>
+                        <span data-aos={`fade-down`} className={`text-[#00BFFF] font-sfPro font-medium text-2xl leading-none tracking-normal align-middle`}>
                             Succès
                         </span>
-                    <span className={`mt-[28px] text-white font-sfPro font-bold max-[1200px]:text-[38px] text-[48px] leading-[120%] tracking-normal`}>
+                    <span data-aos={`fade-down`} data-aos-delay={`1000`} className={`mt-[28px] text-white font-sfPro font-bold max-[1200px]:text-[38px] text-[48px] leading-[120%] tracking-normal`}>
                                 Données & résultats
                         </span>
-                    <span className={`mt-6 text-white/70 font-sfPro font-normal text-2xl leading-none tracking-normal`}>
+                    <span data-aos={`fade-down`} data-aos-delay={`1500`} className={`mt-6 text-white/70 font-sfPro font-normal text-2xl leading-none tracking-normal`}>
                                 Rejoignez les familles qui font le choix d’un accompagnement innovant et bienveillant.
                         </span>
                 </div>
                 <div className={`flex max-[980px]:flex-wrap max-[980px]:justify-center items-start max-[980px]:gap-[15px] gap-[30px] max-[980px]:mt-[20px] max-[1200px]:mt-[65px] mt-[110px]`}>
-                    {Options.map((value, index)=> <div key={index} className={`max-[1200px]:w-[279px] max-[1200px]:h-[212px] w-[379px] h-[312px] option_card`}>
+                    {Options.map((value, index)=> <div data-aos={`fade-right`} data-aos-delay={`${index*500}`} key={index} className={`max-[1200px]:w-[279px] max-[1200px]:h-[212px] w-[379px] h-[312px] option_card`}>
                         <div className={`w-full h-full bg-[#FFFFFF14] flex flex-col items-center max-[1200px]:pt-[27px] max-[1200px]:px-[22px] pt-[47px] px-[35px] backdrop-blur-[254px] rounded-[29px] relative`}>
 
                             <div className={`max-[1200px]:w-[94px] max-[1200px]:h-[94px] w-[128px] h-[128px] rounded-full bg-[#0000001A] centered`}>
@@ -146,16 +149,19 @@ export function Section2() {
                         </div>
                     </div>)}
                 </div>
-                <GradientBorderButton
-                    text={`Tout voir`}
-                    className={`gradient_border_button centered relative text-white w-[358px] h-[69px] max-[980px]:mt-[27px] flex-shrink-0 mt-[57px]`}
-                    innerDivClass={`w-full h-full bg-[#FFFFFF33] rounded-full centered`}
-                    textClassName={`text-[24px] font-sfPro  font-medium leading-[100%] text-center align-middle`}
-                />
-                <span className={` max-[980px]:mt-[70px] mt-[133px] bg-gradient-to-t from-[#7D10D5] to-[#00BFFF] bg-clip-text text-transparent font-sfPro font-semibold max-[980px]:text-[32px] text-[48px] max-[980px]:leading-[32px] leading-[62px] tracking-normal text-center capitalize`}>
+                <div data-aos={`fade-down`} data-aos-delay={`2500`}>
+                    <GradientBorderButton
+                        text={`Tout voir`}
+                        className={`gradient_border_button centered relative text-white w-[358px] h-[69px] max-[980px]:mt-[27px] flex-shrink-0 mt-[57px]`}
+                        innerDivClass={`w-full h-full bg-[#FFFFFF33] rounded-full centered`}
+                        textClassName={`text-[24px] font-sfPro  font-medium leading-[100%] text-center align-middle`}
+                    />
+                </div>
+
+                <span data-aos={`fade-down`} data-aos-delay={`500`} className={` max-[980px]:mt-[70px] mt-[133px] bg-gradient-to-t from-[#7D10D5] to-[#00BFFF] bg-clip-text text-transparent font-sfPro font-semibold max-[980px]:text-[32px] text-[48px] max-[980px]:leading-[32px] leading-[62px] tracking-normal text-center capitalize`}>
                         Progression de la concentration (12 <br/> semaines)
                     </span>
-                <div className={`flex items-center mt-[58px] max-[980px]:gap-[30px] gap-[60px]`}>
+                <div data-aos={`fade-down`} data-aos-delay={`1000`} className={`flex items-center mt-[58px] max-[980px]:gap-[30px] gap-[60px]`}>
                     <Switcher
                         label="Avant NoorAI"
                         active={active === "Avant NoorAI"}
@@ -165,7 +171,7 @@ export function Section2() {
                         active={active === "Avec NoorAI"}
                     />
                 </div>
-                <div className={`w-full max-w-[1400px] h-[450px] mt-[47px] flex flex-col items-center `}>
+                <div data-aos={`fade-down`} data-aos-delay={`1500`} className={`w-full max-w-[1400px] h-[450px] mt-[47px] flex flex-col items-center `}>
                     <div className={`w-full h-[350px] `}>
                         <LineChartComponent />
                     </div>
@@ -176,10 +182,10 @@ export function Section2() {
 
                     <div className={`w-full flex flex-col items-center pt-[112px] `}>
 
-                            <span className={` bg-gradient-to-t from-[#7D10D5] to-[#00BFFF] bg-clip-text text-transparent font-sfPro font-semibold max-[980px]:text-[32px] text-[48px] leading-[62px] tracking-normal text-center capitalize`}>
+                            <span data-aos={`fade-down`} data-aos-delay={`500`} className={` bg-gradient-to-t from-[#7D10D5] to-[#00BFFF] bg-clip-text text-transparent font-sfPro font-semibold max-[980px]:text-[32px] text-[48px] leading-[62px] tracking-normal text-center capitalize`}>
                                 Reduction du stress scolaire par age
                             </span>
-                        <div className={`flex items-center mt-[58px] max-[980px]:gap-[30px] gap-[60px]`}>
+                        <div data-aos={`fade-down`} data-aos-delay={`1000`} className={`flex items-center mt-[58px] max-[980px]:gap-[30px] gap-[60px]`}>
                             <Switcher
                                 label="Avant NoorAI"
                                 active={active === "Avant NoorAI"}
@@ -190,7 +196,7 @@ export function Section2() {
                             />
                         </div>
 
-                        <div className={`w-full max-[980px]:h-[501px] h-[701px] stats_card mt-[48px]`}>
+                        <div data-aos={`fade-down`} data-aos-delay={`1500`} className={`w-full max-[980px]:h-[501px] h-[701px] stats_card mt-[48px]`}>
                             <div className={`flex flex-col items-center pt-[47px] w-full h-full bg-[linear-gradient(180deg,rgba(88,86,214,0.1)_0%,rgba(148,18,209,0.1)_100%)] rounded-[32px]`}>
                                 <div className={`w-full max-[980px]:h-[450px] h-[650px] pl-[40px] relative overflow-hidden`}>
                                     <BarchartComponent/>
@@ -214,11 +220,11 @@ export function Section3() {
             <div className={`absolute -bottom-[403px] -right-[259px] blur-[474px] w-[1027px] h-[1027px] rounded-full bg-[#06303F]`}></div>
             <div className={`absolute top-0 left-0 w-full h-full flex flex-col items-center max-[1200px]:px-[15px] max-[1200px]:pt-[42px] pt-[125px] px-[64px]`}>
 
-                    <span className={` bg-gradient-to-t from-[#7D10D5] to-[#00BFFF] bg-clip-text text-transparent font-sfPro font-semibold max-[980px]:text-[32px] text-[48px] leading-[62px] tracking-normal text-center capitalize`}>
+                    <span data-aos={`fade-down`} className={` bg-gradient-to-t from-[#7D10D5] to-[#00BFFF] bg-clip-text text-transparent font-sfPro font-semibold max-[980px]:text-[32px] text-[48px] leading-[62px] tracking-normal text-center capitalize`}>
                         Evolution des resultats scolaires avec <br/> NoorAI
                     </span>
 
-                <div className={`w-full  h-[560px] max-[1200px]:h-[450px] mt-[30px] flex flex-col items-center relative overflow-hidden`}>
+                <div data-aos={`fade-down`} data-aos-delay={`500`} className={`w-full  h-[560px] max-[1200px]:h-[450px] mt-[30px] flex flex-col items-center relative overflow-hidden`}>
                     <div className={`w-full h-[450px] max-[1200px]:h-[350px] max-[1200px]:pl-2 pl-[40px]`}>
                         <ChartComponent/>
                     </div>
@@ -269,10 +275,10 @@ export function Section4() {
             <div className={`absolute top-0 left-0 w-full h-full bg-[#FFFFFF12] max-[980px]:pt-[10px] pt-[78px] max-[1200px]:px-[30px] px-[120px] flex flex-col items-center`}>
                 <div className={`w-full max-w-[1000px] flex flex-col items-center text-center`}>
 
-                        <span className={`mt-[28px] text-white font-sfPro font-bold max-[1200px]:text-[38px] text-[48px] leading-[150%] tracking-normal`}>
+                        <span data-aos={`fade-down`} className={`mt-[28px] text-white font-sfPro font-bold max-[1200px]:text-[38px] text-[48px] leading-[150%] tracking-normal`}>
                                 Les fondements <br/> scientifiques de NoorAI
                         </span>
-                    <span className={`mt-4 text-white/70 font-sfPro font-normal max-[1200px]:text-xl text-2xl leading-[150%] tracking-normal`}>
+                    <span data-aos={`fade-down`} data-aos-delay={`500`} className={`mt-4 text-white/70 font-sfPro font-normal max-[1200px]:text-xl text-2xl leading-[150%] tracking-normal`}>
                                 NoorAI est le résultat d'une synthèse approfondie de recherches <br/> récentes et de grande qualité dans trois domaines clés :
                         </span>
 
@@ -280,7 +286,7 @@ export function Section4() {
 
                 <div className={`w-full flex max-[980px]:flex-wrap max-[980px]:justify-center items-start justify-center max-[1200px]:gap-[15px] max-[1200px]:mt-[30px] gap-[30px] mt-[70px] `}>
 
-                    {Cards.map((value, index)=> <div key={index} className={`research_card flex-shrink-0 w-[380px] h-[532px] max-[1200px]:w-[300px] max-[1200px]:h-[482px] relative`}>
+                    {Cards.map((value, index)=> <div data-aos={`fade-right`} data-aos-delay={`${index*500}`} key={index} className={`research_card flex-shrink-0 w-[380px] h-[532px] max-[1200px]:w-[300px] max-[1200px]:h-[482px] relative`}>
                         <div  className={'w-full h-full '}>
                             <div className={`w-full h-full rounded-[40px] bg-[#FFFFFF1F] pt-10 max-[1200px]:pt-5 max-[1200px]:px-[15px] px-[25px] flex flex-col items-center`}>
                                 <div className={`flex flex-col items-center `}>
@@ -310,12 +316,14 @@ export function Section4() {
 
                 </div>
 
-                <GradientBorderButton
-                    text={`Voir les articles`}
-                    className={`gradient_border_button centered relative text-white max-[420px]:w-[280px] w-[358px] h-[69px] mt-[50px]`}
-                    innerDivClass={`w-full h-full bg-[#FFFFFF33] rounded-full centered`}
-                    textClassName={`text-[24px] font-sfPro  font-medium leading-[100%] text-center align-middle`}
-                />
+                <div data-aos={`fade-down`} data-aos-delay={`2500`}>
+                    <GradientBorderButton
+                        text={`Voir les articles`}
+                        className={`gradient_border_button centered relative text-white max-[420px]:w-[280px] w-[358px] h-[69px] mt-[50px]`}
+                        innerDivClass={`w-full h-full bg-[#FFFFFF33] rounded-full centered`}
+                        textClassName={`text-[24px] font-sfPro  font-medium leading-[100%] text-center align-middle`}
+                    />
+                </div>
             </div>
         </div>
     );
@@ -329,6 +337,7 @@ export function Section5() {
             <SvgBlobComponent width={651} height={590} className="absolute max-[420px]:left-0 max-[420px]:right-0 max-[420px]:m-auto max-[420px]:top-[83px] max-[980px]:w-[351px] max-[980px]:h-[290px] max-[1200px]:right-[10px] right-[80px] top-[183px] " />
             <SvgBlobComponent width={602} height={546} className="absolute max-[420px]:left-0 max-[420px]:right-0 max-[420px]:m-auto max-[420px]:top-[105px] max-[980px]:w-[302px] max-[980px]:h-[246px] max-[1200px]:right-[36px] right-[106px] top-[205px] " />
             <Image
+                data-aos={`zoom-in`} data-aos-delay={`500`}
                 src={library}
                 alt="bg"
                 className="absolute max-[420px]:left-0 max-[420px]:right-0 max-[420px]:top-20 max-[420px]:m-auto  max-[980px]:w-[383px] max-[980px]:h-[241px] max-[1200px]:right-[15px] right-[125px] top-[220px] object-contain w-[583px] h-[441px]  "
@@ -339,21 +348,23 @@ export function Section5() {
                 <div className={` max-w-[540px] max-[980px]:max-w-[350px] max-[1200px]:max-w-[450px] h-full flex flex-col items-start `}>
                     <div className={`w-full flex flex-col items-start`}>
 
-                            <span className={`mt-[28px] text-white font-sfPro font-bold max-[980px]:text-[32px] text-[48px] leading-[120%] tracking-normal`}>
+                            <span data-aos={`fade-right`} data-aos-delay={`500`} className={`mt-[28px] text-white font-sfPro font-bold max-[980px]:text-[32px] text-[48px] leading-[120%] tracking-normal`}>
                                 Vision à long terme
                             </span>
-                        <span className={`mt-6 text-white font-sfPro font-normal text-2xl leading-[150%] tracking-normal`}>
+                        <span data-aos={`fade-right`} data-aos-delay={`1000`} className={`mt-6 text-white font-sfPro font-normal text-2xl leading-[150%] tracking-normal`}>
                                 Mesurer l'impact, soutenir la transformation de l'éducation, anticiper les défis de demain.
                                 <br/><br/>
                                 NoorAI est une EdTech responsable, au service des personnes.
                             </span>
 
-                        <GradientBorderButton
-                            text={`En savoir plus`}
-                            className={`gradient_border_button centered relative text-white max-[420px]:w-[258px] w-[358px] h-[69px] mt-[72px]`}
-                            innerDivClass={`w-full h-full bg-[#FFFFFF33] rounded-full centered`}
-                            textClassName={`max-[420px]:text-[20px] text-[24px] font-sfPro  font-medium leading-[100%] text-center align-middle`}
-                        />
+                        <div data-aos={`fade-right`} data-aos-delay={`1500`}>
+                            <GradientBorderButton
+                                text={`En savoir plus`}
+                                className={`gradient_border_button centered relative text-white max-[420px]:w-[258px] w-[358px] h-[69px] mt-[72px]`}
+                                innerDivClass={`w-full h-full bg-[#FFFFFF33] rounded-full centered`}
+                                textClassName={`max-[420px]:text-[20px] text-[24px] font-sfPro  font-medium leading-[100%] text-center align-middle`}
+                            />
+                        </div>
 
                     </div>
                 </div>
