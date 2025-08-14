@@ -36,7 +36,7 @@ export default function HeaderMobileMenu({ navbar, bgClass }) {
 
             {/* Overlay */}
             <div
-                className={`absolute left-0 top-[104px] w-full h-screen bg-black/60 transition-opacity duration-300 ${
+                className={`absolute left-0 top-[104px] w-full h-screen bg-black/90 transition-opacity duration-300 ${
                     menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
                 }`}
                 onClick={() => setMenuOpen(false)}

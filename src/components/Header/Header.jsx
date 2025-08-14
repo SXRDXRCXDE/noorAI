@@ -16,7 +16,7 @@ const Navbar = [
 export default function Header({ currentPathname = "/" }) {
     const isAuthPage =
         currentPathname === "/login" || currentPathname === "/register";
-    const bgClass = isAuthPage ? "bg-[#28262e]" : "bg-black/30";
+    const bgClass = isAuthPage ? "bg-[#28262e]" : "bg-black/60";
 
     return (
         <header
