@@ -130,7 +130,7 @@
 
 .form_background3_content {
   background: linear-gradient(180deg, rgba(14, 12, 21, 1) 0%, rgba(14, 12, 21, 1) 100%);
-  @apply w-full h-full rounded-3xl overflow-hidden max-[400px]:py-7 max-[980px]:py-10 py-20 max-[400px]:px-[30px] px-[60px] flex flex-col items-center justify-between ;
+  @apply w-full h-full rounded-3xl overflow-hidden max-[545px]:py-7 max-[980px]:py-10 py-20 max-[545px]:px-[30px] px-[60px] flex flex-col items-center justify-between ;
 }
 
 /*.card_linear{*/

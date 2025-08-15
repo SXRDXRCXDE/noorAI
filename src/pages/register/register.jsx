@@ -66,22 +66,22 @@ export default async function Register({ searchParams }) {
                         </section>
 
                         {/* Form */}
-                        <div className="absolute max-[400px]:top-80 max-[980px]:top-96 max-[400px]:left-1.5 max-[980px]:left-32 max-[980px]:right-0 max-[980px]:m-auto max-[1200px]:right-[48px] max-[1300px]:right-[148px] right-[248px] max-[1300px]:top-[157px] top-[207px] max-[980px]:w-[388px] max-[980px]:h-[430px] w-[488px] h-[530px]">
+                        <div className="absolute max-[545px]:top-80 max-[980px]:top-96 max-[340px]:-translate-x-9 max-[365px]:-translate-x-5 max-[395px]:-translate-x-2 max-[545px]:left-1.5 max-[980px]:left-32 max-[980px]:right-0 max-[980px]:m-auto max-[1200px]:right-[48px] max-[1300px]:right-[148px] right-[248px] max-[1300px]:top-[157px] top-[207px] max-[980px]:w-[388px] max-[980px]:h-[430px] w-[488px] h-[530px]">
                             <div className="w-full h-full relative">
                                 <div
                                     data-aos="fade-right"
                                     data-aos-delay="1500"
-                                    className="form_background1 absolute right-0 top-0 bottom-0 m-auto rounded-r-3xl w-[24px] max-[400px]:h-[122px] max-[980px]:h-[222px] max-[1300px]:h-[322px] h-[422px] bg-[#6C63FF]"
+                                    className="form_background1 absolute right-0 top-0 bottom-0 m-auto rounded-r-3xl w-[24px] max-[545px]:h-[122px] max-[980px]:h-[222px] max-[1300px]:h-[322px] h-[422px] bg-[#6C63FF]"
                                 ></div>
 
                                 <div
                                     data-aos="fade-right"
                                     data-aos-delay="1000"
-                                    className="form_background2 absolute right-[24px] top-0 bottom-0 m-auto rounded-r-3xl w-[24px] max-[400px]:h-[156px] max-[980px]:h-[256px] max-[1300px]:h-[356px] h-[456px] bg-[#FF6584]"
+                                    className="form_background2 absolute right-[24px] top-0 bottom-0 m-auto rounded-r-3xl w-[24px] max-[545px]:h-[156px] max-[980px]:h-[256px] max-[1300px]:h-[356px] h-[456px] bg-[#FF6584]"
                                 ></div>
                                 <div
                                     data-aos="fade-left"
-                                    className="form_back3 border border-white absolute right-[48px] top-0 bottom-0 m-auto rounded-3xl w-[440px] max-[400px]:w-[320px] max-[400px]:h-[400px] max-[980px]:h-[410px] max-[1300px]:h-[510px] h-[610px] py-0.5 px-0.5"
+                                    className="form_back3 border border-white absolute right-[48px] top-0 bottom-0 m-auto rounded-3xl w-[440px] max-[340px]:w-[290px] max-[545px]:w-[300px] max-[545px]:h-[400px] max-[980px]:h-[410px] max-[1300px]:h-[510px] h-[610px] py-0.5 px-0.5"
                                 >
                                     <div className="form_background3_content">
                                         <form

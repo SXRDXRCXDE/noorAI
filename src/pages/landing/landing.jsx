@@ -102,54 +102,54 @@ export  function Section2() {
                     data-aos="zoom-in"
                     width={560}
                     height={528}
-                    className="absolute top-[95px] rotate-[-163.56°] max-[420px]:left-0 max-[420px]:right-0 max-[420px]:m-auto max-[420px]:w-[260px] max-[420px]:h-[228px] max-[980px]:right-[20px] max-[1300px]:right-[60px] right-[160px] max-[1200px]:w-[460px] max-[1200px]:h-[428px]"
+                    className="absolute top-[95px] rotate-[-163.56°] max-[650px]:left-0 max-[650px]:right-0 max-[650px]:m-auto max-[650px]:w-[260px] max-[650px]:h-[228px] max-[980px]:right-[20px] max-[1300px]:right-[60px] right-[160px] max-[1200px]:w-[460px] max-[1200px]:h-[428px]"
                 />
 
                 <LightBlobSvg
                     data-aos="zoom-in"
                     width={507}
                     height={478}
-                    className="absolute top-[120px] rotate-[-163.56°] max-[420px]:left-0 max-[420px]:right-0 max-[420px]:m-auto max-[420px]:w-[207px] max-[420px]:h-[178px] max-[980px]:right-[49px] max-[1300px]:right-[89px] right-[189px] max-[1200px]:w-[407px] max-[1200px]:h-[378px]"
+                    className="absolute top-[120px] rotate-[-163.56°] max-[650px]:left-0 max-[650px]:right-0 max-[650px]:m-auto max-[650px]:w-[207px] max-[650px]:h-[178px] max-[980px]:right-[49px] max-[1300px]:right-[89px] right-[189px] max-[1200px]:w-[407px] max-[1200px]:h-[378px]"
                 />
                 <Image
                     data-aos="zoom-in"
                     data-aos-delay="300"
                     src={boy}
                     alt="bg"
-                    className=" max-[420px]:w-[325px] max-[420px]:h-[325px] min-[420px]:hidden absolute left-0 right-0 m-auto top-0  object-cover  object-cover "
+                    className=" max-[650px]:w-[325px] max-[650px]:h-[325px] min-[650px]:hidden absolute left-0 right-0 m-auto top-0  object-cover  object-cover "
                 />
 
 
-                <div className={'absolute left-0 top-0 w-full h-full  flex max-[420px]:flex-col items-start '}>
-                    <div  className={'max-[420px]:w-full max-[420px]:pt-80 max-[1200px]:pt-[62px] pt-[125px] max-[980px]:pl-[60px] pl-[123px] w-1/2 flex flex-col items-start '}>
+                <div className={'absolute left-0 top-0 w-full h-full  flex max-[650px]:flex-col items-start '}>
+                    <div  className={'max-[650px]:w-full max-[650px]:pt-80 max-[1200px]:pt-[62px] pt-[125px] max-[650px]:pl-3 max-[650px]:pr-3 max-[980px]:pl-[60px] pl-[123px] w-1/2 flex flex-col items-start '}>
                         <span data-aos="fade-right" className="font-sfPro text-white font-bold  max-[980px]:text-[24px] max-[1200px]:text-[36px] text-[48px] leading-[100%] align-middle">
                           Pourquoi réinventer
                           <br className={'max-[1200px]:hidden'}/>
                            l’éducation ?
                         </span>
-                        <span data-aos="fade-right" className={`mt-[27px] max-[420px]:mt-[10px] font-sfPro text-white font-normal max-[980px]:text-[16px] max-[1200px]:text-[20px] text-[24px] max-[420px]:leading-4 leading-8 align-middle tracking-[0%]`}>
+                        <span data-aos="fade-right" className={`mt-[27px] max-[650px]:mt-[10px] font-sfPro text-white font-normal max-[980px]:text-[16px] max-[1200px]:text-[20px] text-[24px] max-[420px]:leading-4 leading-8 align-middle tracking-[0%]`}>
                             L’éducation façonne l’avenir. <br/>
                             Pourtant, chaque élève est unique, avec ses forces, ses doutes, ses émotions. Chez NoorAI, nous croyons qu’il est temps d’offrir à chaque apprenant un accompagnement sur-mesure, bienveillant et innovant.
                         </span>
-                        <span data-aos="fade-right" className={`mt-[16px] max-[420px]:mt-2 font-sfPro text-white font-normal max-[980px]:text-[16px] max-[1200px]:text-[20px] text-[24px] max-[420px]:leading-4 leading-8 align-middle tracking-[0%]`}>
+                        <span data-aos="fade-right" className={`mt-[16px] max-[650px]:mt-2 font-sfPro text-white font-normal max-[980px]:text-[16px] max-[1200px]:text-[20px] text-[24px] max-[420px]:leading-4 leading-8 align-middle tracking-[0%]`}>
                             Offrez à votre enfant la chance d’apprendre à son rythme, dans un environnement qui le comprend.
                         </span>
                         <div className={``} data-aos="fade-zoom-in" data-aos-delay="1000">
                             <GradientBorderButton
                                 text={`En savoir plus`}
                                 textClassName={`text-[24px] max-[1200px]:text-[20px] font-sfPro  font-medium leading-[100%] text-center align-middle`}
-                                className={`gradient_border_button centered relative text-white max-[420px]:w-[158px] max-[1200px]:w-[258px] max-[1200px]:h-[50px] w-[358px] h-[69px] mt-[37px] `}
+                                className={`gradient_border_button centered relative text-white max-[650px]:w-[158px] max-[1200px]:w-[258px] max-[1200px]:h-[50px] w-[358px] h-[69px] mt-[37px] `}
                                 innerDivClass={`w-full h-full bg-[#FFFFFF33] rounded-full centered`}
                             />
                         </div>
                     </div>
-                    <div className={'max-[420px]:hidden max-[420px]:pt-64 max-[420px]:pl-0 pt-[125px] pl-[123px] max-[420px]:w-full w-1/2 h-full flex flex-col items-start relative '}>
+                    <div className={'max-[650px]:hidden max-[650px]:pt-64 max-[650px]:pl-0 pt-[125px] pl-[123px] max-[650px]:w-full w-1/2 h-full flex flex-col items-start relative '}>
                         <Image
                             data-aos="zoom-in"
                             data-aos-delay="300"
                             src={boy}
                             alt="bg"
-                            className="max-[420px]:hidden absolute right-0 left-0 top-0 bottom-0 m-auto object-cover w-[625px] h-[625px] object-cover "
+                            className="max-[650px]:hidden absolute right-0 left-0 top-0 bottom-0 m-auto object-cover w-[625px] h-[625px] object-cover "
                         />
                     </div>
                 </div>
@@ -200,16 +200,16 @@ export function Section3() {
     ];
 
     return(
-        <div className={'w-full h-[971px] max-[980px]:h-[1024px] max-[420px]:h-[1500px] relative overflow-hidden'}>
+        <div className={'w-full h-[971px] max-[806px]:h-[calc(971px+120px)] max-[540px]:h-[calc(971px+120px+440px)] max-[980px]:h-[1024px] max-[420px]:h-[1500px] max-[310px]:h-[calc(1500px+50px)] relative overflow-hidden'}>
             <div className={'absolute -left-[201px] bottom-[36px] blur-[794px] w-[761px] h-[761px] bg-[#5C9595] rounded-full '}></div>
             <div className={'absolute -right-[226px] -top-[88px] blur-[984px] w-[650px] h-[650px] bg-[#7A7C8A] rounded-full '}></div>
             <div className={'absolute left-0 top-0 w-full h-full '}>
-                <div className={'w-full h-full max-[1200px]:pt-[66px] pt-[112px] flex flex-col items-center'}>
+                <div className={'w-full h-full max-[806px]:pt-[60px] max-[1200px]:pt-[140px] pt-[112px] flex flex-col items-center'}>
                     <div className={`flex flex-col items-center `}>
                         <span data-aos="fade-down" className={`text-white font-sfPro max-[1200px]:text-[32px] text-[48px] font-bold leading-[100%] text-center`}>Bénéfices pour tous</span>
                         <span data-aos="fade-down" data-aos-delay="300" className={`mt-6 max-[1200px]:mt-3 text-white font-sfPro max-[1200px]:text-[20px] text-[24px] font-[400] leading-7 text-center`}>L'éducation façonne l'avenir. Pourtant, chaque élève est unique, avec ses <br/> propres forces, ses doutes et ses émotions.</span>
                     </div>
-                    <div className={'mt-20 max-[980px]:mt-5 flex items-start justify-center max-[980px]:flex-wrap max-[980px]:gap-[15px] gap-[30px]'}>
+                <div className={'mt-20 max-[806px]:mt-10 px-3 flex items-start justify-center max-[980px]:flex-wrap max-[980px]:gap-[15px] gap-[30px]'}>
 
                         {/*Transparent card*/}
                         {Cards.map((value, index)=> <div data-aos="fade-down" data-aos-delay={`${index*300}`} key={index} className={`card_linear max-[1200px]:w-[250px] max-[1200px]:h-[402px] w-[380px] h-[532px] relative`}>
@@ -273,9 +273,9 @@ export function Section4() {
                 );
             })}
             <div className={`absolute bottom-[49px] -right-[243px] w-[761px] h-[761px] bg-[#5C9595] blur-[794px] rounded-full`}></div>
-            <LightBlobSvg data-aos={`zoom-in`} width={504} height={475} className="absolute bottom-[153px] rotate-[-163.56°] max-[420px]:top-5 max-[980px]:w-[304px] max-[980px]:h-[275px]  max-[1200px]:left-[59px] max-[1300px]:left-[109px] left-[189px]" />
-            <div className={'absolute left-0 top-0 w-full h-full flex max-[420px]:flex-col items-start '}>
-                <div className={'pt-[125px] max-[980px]:pl-[0px] pl-[123px] max-[420px]:w-full max-[980px]:w-[50%] w-1/2 max-[420px]:h-auto h-full flex flex-col items-start relative '}>
+            <LightBlobSvg data-aos={`zoom-in`} width={504} height={475} className="absolute bottom-[153px] rotate-[-163.56°] max-[850px]:left-0 max-[850px]:right-0 max-[850px]:top-5 max-[850px]:-translate-y-40 max-[850px]:m-auto  max-[980px]:w-[304px] max-[980px]:h-[275px]  max-[1200px]:left-[59px] max-[1300px]:left-[109px] left-[189px]" />
+            <div className={'absolute left-0 top-0 w-full h-full flex max-[850px]:flex-col items-start '}>
+                <div className={'pt-[125px] max-[980px]:pl-[0px] pl-[123px] max-[850px]:w-full max-[980px]:w-[50%] w-1/2 max-[850px]:h-auto h-full flex flex-col items-start relative '}>
                     <Image
                         data-aos={`zoom-in`}
                         data-aos-delay={`600`}
@@ -284,13 +284,13 @@ export function Section4() {
                         className="absolute right-0 left-0 top-0 bottom-0 m-auto max-[980px]:translate-y-20 object-cover max-[980px]:w-[326px] max-[980px]:h-[326px] w-[526px] h-[526px] object-cover "
                     />
                 </div>
-                <div className={'pt-[163px] pl-[123px] max-[420px]:px-3 max-[980px]:pl-0 max-[420px]:w-full max-[420px]:text-center max-[420px]:items-center w-1/2 flex flex-col items-start '}>
-                        <span data-aos={`fade-left`} className="font-sfPro text-white font-bold max-[420px]:text-[26px] max-[1200px]:text-[32px] text-[48px] leading-[100%] align-middle">
+                <div className={'pt-[163px] pl-[123px] max-[850px]:px-3 max-[980px]:pl-0 max-[850px]:w-full max-[850px]:text-center max-[850px]:items-center w-1/2 flex flex-col items-start '}>
+                        <span data-aos={`fade-left`} className="font-sfPro text-white font-bold max-[850px]:text-[26px] max-[1200px]:text-[32px] text-[48px] leading-[100%] align-middle">
                           La EdTech en pleine croissance
                           <br className={'max-[1200px]:hidden'}/>
                            l’éducation ?
                         </span>
-                        <span data-aos={`fade-left`} data-aos-delay={`300`} className={`mt-[27px] max-[420px]:mt-[17px] font-sfPro text-white font-normal max-[420px]:text-[16px] max-[1200px]:text-[20px] text-[24px] leading-8 align-middle tracking-[0%]`}>
+                        <span data-aos={`fade-left`} data-aos-delay={`300`} className={`mt-[27px] max-[850px]:mt-[17px] font-sfPro text-white font-normal max-[850px]:text-[16px] max-[1200px]:text-[20px] text-[24px] leading-8 align-middle tracking-[0%]`}>
                             L’éducation numérique connaît une révolution sans précédent.
                             +30% de croissance annuelle du secteur EdTech en Europe.
                             <br/><br/>
@@ -338,7 +338,7 @@ export function Section5() {
     ];
 
     return(
-        <div  className={`w-full h-[876px] max-[420px]:h-[1424px] relative overflow-hidden`}>
+        <div  className={`w-full h-[876px] max-[440px]:h-[1650px] max-[540px]:h-[1450px] max-[800px]:h-[1024px] relative overflow-hidden`}>
             {Array.from({ length: 8 }).map((_, i) => {
                 const left = -287 - i * 15;
                 const top = 33 - i * 10;
@@ -368,14 +368,14 @@ export function Section5() {
             <div className={`absolute top-0 -left-[649px] blur-[764px] w-[1120px] h-[1120px] bg-[#5D5D5D]`}></div>
             <div className={`absolute top-[36px] -right-[303px] blur-[764px] w-[761px] h-[761px] bg-[#0B3E68]`}></div>
             <div className={`absolute top-0 left-0 w-full h-full `}>
-                <div className={`w-full h-full flex flex-col items-center max-[1200px]:pt-[30px] pt-[90px] max-[1200px]:px-[30px] px-[120px]`}>
-                    <span data-aos={`fade-down`} className={`text-white text-center font-sfPro font-bold max-[420px]:text-[28px] text-[48px] leading-[100%] align-middle`}>Vie privée et protection des données</span>
-                    <span data-aos={`fade-down`} data-aos-delay={`400`} className={`text-white max-[1200px]:mt-[14px] mt-[24px] font-sfPro font-normal max-[420px]:text-[20px] text-[24px] leading-[100%] tracking-[0] text-center align-middle`}>Votre enfant grandit, vous gardez le contrôle</span>
+                <div className={`w-full h-full flex flex-col items-center max-[1200px]:pt-[60px] pt-[90px] max-[530px]:px-2 max-[1200px]:px-[30px] px-[120px]`}>
+                    <span data-aos={`fade-down`} className={`text-white text-center font-sfPro font-bold max-[800px]:text-[28px] text-[48px] leading-[100%] align-middle`}>Vie privée et protection des données</span>
+                    <span data-aos={`fade-down`} data-aos-delay={`400`} className={`text-white max-[1200px]:mt-[14px] mt-[24px] font-sfPro font-normal max-[800px]:text-[20px] text-[24px] leading-[100%] tracking-[0] text-center align-middle`}>Votre enfant grandit, vous gardez le contrôle</span>
 
-                    <div className={`w-full flex max-[420px]:flex-col max-[420px]:justify-start items-start justify-center mt-[109px] max-[1200px]:mt-[100px] max-[980px]:mt-[30px] max-[1200px]:gap-[50px] gap-x-[200px] `}>
+                    <div className={`w-full flex max-[800px]:flex-col max-[800px]:items-center items-start justify-center mt-[109px] max-[1200px]:mt-[100px] max-[980px]:mt-[30px] max-[1200px]:gap-[50px] max-[1260px]:gap-[60px] gap-x-[200px] `}>
                         <div className="flex flex-col items-start max-[1200px]:gap-[25px] gap-[55px]">
                             {Variant.slice(0, 3).map((value, index) => (
-                                <div data-aos={`fade-down`} data-aos-delay={`${index*5}00`} key={index} className=" max-w-[500px] flex items-start">
+                                <div data-aos={`fade-down`} data-aos-delay={`${index*5}00`} key={index} className=" max-w-[500px] max-[540px]:flex-col max-[540px]:items-center max-[540px]:gap-5 flex items-start">
                                     <div className=" mini_card_linear flex-shrink-0 w-[75px] h-[75px] ">
                                         <div className={`w-full h-full bg-[#FFFFFF1F] rounded-[18px] centered flex-shrink-0 `}>
                                             <Image
@@ -385,7 +385,7 @@ export function Section5() {
                                             />
                                         </div>
                                     </div>
-                                    <div className="ml-[35px] flex flex-col items-start gap-[14px]">
+                                    <div className="ml-[35px] max-[530px]:ml-2 flex flex-col items-start gap-[14px]">
                                             <span className="text-white drop-shadow-[0px_4px_4px_#0000007A] font-sfPro font-bold text-[24px] leading-[100%] tracking-[0]">
                                               {value.name}
                                             </span>
@@ -399,7 +399,7 @@ export function Section5() {
 
                         <div className="flex flex-col items-start gap-[55px]">
                             {Variant.slice(3, 5).map((value, index) => (
-                                <div data-aos={`fade-down`} data-aos-delay={`${1000 + index*500}`} key={index} className="max-w-[500px] flex items-start">
+                                <div data-aos={`fade-down`} data-aos-delay={`${1000 + index*500}`} key={index} className="max-w-[500px] max-[540px]:flex-col max-[540px]:items-center max-[540px]:gap-5 flex items-start">
                                     <div className=" mini_card_linear flex-shrink-0 w-[75px] h-[75px] ">
                                         <div className={`w-full h-full bg-[#FFFFFF1F] rounded-[18px] centered flex-shrink-0 `}>
                                             <Image
@@ -409,11 +409,11 @@ export function Section5() {
                                             />
                                         </div>
                                     </div>
-                                    <div className="ml-[35px] flex flex-col items-start gap-[14px]">
+                                    <div className="ml-[35px] max-[530px]:ml-2 flex flex-col items-start gap-[14px]">
                                             <span className="text-white drop-shadow-[0px_4px_4px_#0000007A] font-sfPro font-bold text-[24px] leading-[100%] tracking-[0]">
                                               {value.name}
                                             </span>
-                                        <span className="text-white font-sfPro font-normal text-[16px] leading-[150%] tracking-[0]">
+                                        <span className="   text-white font-sfPro font-normal text-[16px] leading-[150%] tracking-[0]">
                                               {value.description}
                                             </span>
                                     </div>
@@ -451,14 +451,14 @@ export function Section6() {
     ];
 
     return (
-        <div className={'w-full h-[971px] max-[980px]:h-[1324px] max-[420px]:h-[1900px] relative overflow-hidden'}>
+        <div className={'w-full h-[971px] max-[980px]:h-[1324px] max-[580px]:h-[1900px] relative overflow-hidden'}>
             <div className={'absolute -left-[649px] bottom-[171px] blur-[764px] w-[1120px] h-[1120px] bg-[#5D5D5D] rounded-full '}></div>
             <div className={'absolute -right-[303px] top-[36px] blur-[794px] w-[761px] h-[761px] bg-[#0B3E68] rounded-full '}></div>
             <div className={'absolute left-0 top-0 w-full h-full '}>
                 <div className={'w-full h-full max-[1200px]:pt-[66px] pt-[112px] flex flex-col items-center'}>
                     <div className={`flex flex-col items-center`}>
                         <span data-aos={`fade-down`} className={`text-white font-sfPro max-[1200px]:text-[32px] text-[48px] font-bold leading-[100%] text-center`}>Témoignages</span>
-                        <span data-aos={`fade-down`} data-aos-delay={`500`} className={`mt-6 max-[1200px]:mt-3 text-white font-sfPro max-[1200px]:text-[20px] text-[24px] font-[400] leading-7 text-center`}>
+                        <span data-aos={`fade-down`} data-aos-delay={`500`} className={`mt-6 px-3 max-[1200px]:mt-3 text-white font-sfPro max-[1200px]:text-[20px] text-[24px] font-[400] leading-7 text-center`}>
                             Vous aussi, offrez à votre enfant un accompagnement qui fait la <br className="max-[980px]:hidden"/> différence.
                         </span>
                     </div>

@@ -110,7 +110,7 @@ export default function  PaymentSectionClient() {
     };
 
     return(
-        <div className={`w-full h-[calc(804px+434px)] max-[450px]:h-[calc(804px+434px+500px)] relative overflow-hidden`}>
+        <div className={`w-full h-[calc(804px+434px)]  max-[710px]:h-[calc(804px+434px+500px)] relative overflow-hidden`}>
             <div className={`absolute -right-[423px] -bottom-[171px]  w-[972px] h-[972px] rounded-full blur-[824px] bg-[#501C6A]`}></div>
             <div className={`absolute -left-[288px] -bottom-[calc(171px+677px)]  w-[972px] h-[972px] rounded-full blur-[824px] bg-[#0D496F]`}></div>
             <div className={`absolute left-0 top-0 w-full h-[804px] `}>
@@ -136,13 +136,13 @@ export default function  PaymentSectionClient() {
             <div className={`absolute left-0 top-0 flex flex-col items-center w-full h-full pt-[285px] max-[1200px]:px-[30px] px-[120px]`}>
                 <span data-aos={`fade-down`} data-aos-delay={`500`} className={`text-white font-sfPro font-bold max-[980px]:text-[32px] text-[48px] leading-[100%] tracking-[0] text-center align-middle`}>Paiement</span>
                 <span data-aos={`fade-down`} data-aos-delay={`1000`} className={`text-white font-sfPro font-normal max-[980px]:text-[20px] text-[24px] leading-[150%] tracking-[0] text-center`}>Résumé de votre sélection</span>
-                <div data-aos={`fade-down`} data-aos-delay={`2000`} className={`checkout_card mt-[60px] w-full max-[450px]:h-[1254px] h-[724px]`}>
-                    <div className={`w-full h-full bg-[#FFFFFF14] backdrop-blur-[254px] rounded-[30px] flex max-[450px]:flex-col items-center justify-between `}>
-                        <div className={`w-2/3 max-[450px]:w-full h-full flex flex-col items-start py-[82px] max-[450px]:py-[20px] max-[1200px]:px-[20px] px-[64px]`}>
+                <div data-aos={`fade-down`} data-aos-delay={`2000`} className={`checkout_card mt-[60px] w-full max-[380px]:h-[1320px] max-[710px]:h-[1280px] h-[724px] `}>
+                    <div className={`w-full h-full bg-[#FFFFFF14] backdrop-blur-[254px] rounded-[30px] flex max-[710px]:flex-col items-center overflow-hidden justify-between `}>
+                        <div className={`w-2/3 max-[710px]:w-full h-full flex flex-col items-start py-[82px] max-[710px]:py-[20px] max-[1200px]:px-[20px] px-[64px]`}>
                             <div className={`w-full flex items-center justify-between`}>
                                 <span className={`text-white font-sfPro font-[590] max-[980px]:text-[18px] text-[24px] leading-[24px] tracking-[-1.2%]`}>Méthode de paiement</span>
                             </div>
-                            <div className={`mt-[31px] max-[450px]:mt-[15px] w-full h-[2px] bg-gradient-to-r from-transparent via-white/20 to-transparent`}></div>
+                            <div className={`mt-[31px] max-[710px]:mt-[15px] w-full h-[2px] bg-gradient-to-r from-transparent via-white/20 to-transparent`}></div>
                             {methods.map((m) => (
                                 <PaymentMethod
                                     key={m.id}
@@ -157,8 +157,8 @@ export default function  PaymentSectionClient() {
                                 <span className={`text-white font-sfPro font-[590] text-[20px] leading-[24px] tracking-[-1.2%]`}>Méthode de paiement</span>
                             </div>
                             <div className={`mt-[0px] w-full h-[2px] bg-gradient-to-r from-transparent via-white/20 to-transparent`}></div>
-                            <div className={`w-full flex max-[450px]:flex-col items-start gap-[15px]  `}>
-                                <div className={`w-1/2 max-[450px]:w-full flex flex-col items-start`}>
+                            <div className={`w-full flex max-[710px]:flex-col items-start gap-[15px]  `}>
+                                <div className={`w-1/2 max-[710px]:w-full flex flex-col items-start`}>
                                     <div className={`w-full flex flex-col items-start mt-[10px] gap-2`}>
                                         <span className={` text-white font-sfPro font-[590] text-[16px] leading-[140%] tracking-[-0.2px]`}>Nom du titulaire</span>
                                         <Input placeholder={`Saisissez votre nom`} className={`w-full bg-[#FFFFFF1A] h-[46px] rounded-[12px] border border-[#E4E9EE80] text-white placeholder:text-[#818B9C] font-sfPro font-normal text-[16px] leading-[160%] tracking-[0px]`}/>
@@ -201,7 +201,7 @@ export default function  PaymentSectionClient() {
                                         </Popover>
                                     </div>
                                 </div>
-                                <div className={`w-1/2 max-[450px]:w-full flex flex-col items-start`}>
+                                <div className={`w-1/2 max-[710px]:w-full flex flex-col items-start`}>
                                     <div className={`w-full flex flex-col items-start mt-[10px] gap-2`}>
                                         <span className={` text-white font-sfPro font-[590] text-[16px] leading-[140%] tracking-[-0.2px]`}>Numéro de carte</span>
                                         <Input placeholder="0000 0000 0000 0000" value={cardNumber} onChange={handleChange} className="w-full bg-[#FFFFFF1A] h-[46px] rounded-[12px] border border-[#E4E9EE80] text-white placeholder:text-[#818B9C] font-sfPro font-normal text-[16px] leading-[160%] tracking-[0px]"/>
@@ -212,22 +212,22 @@ export default function  PaymentSectionClient() {
                                     </div>
                                 </div>
                             </div>
-                            <div className={`flex items-center gap-4 mt-[30px] self-end`}>
-                                <div className={'gradient_border_button centered relative text-white max-[450px]:w-[140px] w-[160px] h-[46px] '}>
+                            <div className={`w-full flex items-center gap-4 mt-[30px] self-end`}>
+                                <div className={'gradient_border_button centered relative text-white max-[380px]:w-full max-[710px]:w-[140px] w-[160px] h-[46px] '}>
                                     <div className={'w-full h-full bg-[#FFFFFF33] rounded-full centered'}>
                                         <span className={`text-[16px] font-sfPro  font-medium leading-[100%] text-center align-middle`}>Annuler</span>
                                     </div>
                                 </div>
-                                <GradientButton className={` text-white rounded-full  max-[450px]:w-[140px] w-[160px] h-[46px] font-sfPro font-bold text-[16px] leading-[140%] tracking-[-0.2px] text-center`}>Ajouter la carte</GradientButton>
+                                <GradientButton className={` text-white rounded-full  max-[710px]:w-[140px] w-[160px] h-[46px] font-sfPro font-bold text-[16px] leading-[140%] tracking-[-0.2px] text-center`}>Ajouter la carte</GradientButton>
                             </div>
                         </div>
-                        <div className={`w-[2px] max-[450px]:w-full max-[450px]:h-[2px] h-[431px] bg-gradient-to-t from-transparent via-white/20 to-transparent`}></div>
-                        <div className={`w-1/3 max-[450px]:w-full h-full flex flex-col items-start max-[450px]:py-[10px] py-[82px] max-[980px]:px-[12px] px-[42px]`}>
+                        <div className={`w-[2px] max-[710px]:w-full max-[710px]:h-[2px] h-[431px] bg-gradient-to-t from-transparent via-white/20 to-transparent`}></div>
+                        <div className={`w-1/3 max-[710px]:w-full h-full flex flex-col items-start max-[710px]:py-[10px] py-[82px] max-[980px]:px-[12px] px-[42px]`}>
                             <div className={`w-full flex items-center justify-between`}>
                                 <span className={`text-white font-sfPro font-[590] max-[980px]:text-[20px] text-[32px] leading-[24px] tracking-[-1.2%]`}>Résumé du paiement</span>
                             </div>
-                            <div className={`mt-[31px] max-[450px]:mt-[16px] w-full h-[2px] bg-gradient-to-r from-transparent via-white/20 to-transparent`}></div>
-                            <div className={`w-full justify-between flex items-center gap-[15px] max-[450px]:mt-[15px] mt-[34px] `}>
+                            <div className={`mt-[31px] max-[710px]:mt-[16px] w-full h-[2px] bg-gradient-to-r from-transparent via-white/20 to-transparent`}></div>
+                            <div className={`w-full justify-between flex items-center gap-[15px] max-[710px]:mt-[15px] mt-[34px] `}>
                                 <span className={`text-white font-sfPro font-normal text-[16px] leading-[24px] tracking-[-1.2%]`}>Prix</span>
                                 <span className={`text-[#F6EB13] font-sfPro font-normal text-[20px] leading-[24px] tracking-[-1.2%]`}>€189.00</span>
                             </div>
@@ -239,8 +239,8 @@ export default function  PaymentSectionClient() {
                                 <span className={`text-white font-sfPro font-normal text-[16px] leading-[24px] tracking-[-1.2%]`}>TVA & frais</span>
                                 <span className={`text-[#F6EB13] font-sfPro font-normal text-[20px] leading-[24px] tracking-[-1.2%]`}>€12.00</span>
                             </div>
-                            <div className={`mt-[31px] max-[450px]:mt-[15px] w-full h-[3px] bg-gradient-to-r from-transparent via-white/20 to-transparent`}></div>
-                            <div className={`w-full justify-between flex items-center gap-[15px] max-[450px]:mt-[13px] mt-[23px] `}>
+                            <div className={`mt-[31px] max-[710px]:mt-[15px] w-full h-[3px] bg-gradient-to-r from-transparent via-white/20 to-transparent`}></div>
+                            <div className={`w-full justify-between flex items-center gap-[15px] max-[710px]:mt-[13px] mt-[23px] `}>
                                 <span className={`text-white font-sfPro font-normal text-[18px] leading-[24px] tracking-[-1.2%]`}>Prix total</span>
                                 <span className={`text-[#F6EB13] font-sfPro font-normal text-[24px] leading-[24px] tracking-[-1.2%]`}>€215.90</span>
                             </div>

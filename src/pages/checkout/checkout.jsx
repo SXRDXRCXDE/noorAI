@@ -17,7 +17,7 @@ export default function Checkout() {
 
 function Section1() {
     return (
-        <div className={`w-full h-[calc(804px+434px)] max-[420px]:h-[calc(804px+434px+200px)] relative overflow-hidden`}>
+        <div className={`w-full h-[calc(804px+434px)] max-[710px]:h-[calc(804px+434px+200px)] relative overflow-hidden`}>
 
             <div className={`absolute -right-[423px] -bottom-[171px]  w-[972px] h-[972px] rounded-full blur-[824px] bg-[#501C6A]`}></div>
             <div className={`absolute -left-[288px] -bottom-[calc(171px+677px)]  w-[972px] h-[972px] rounded-full blur-[824px] bg-[#0D496F]`}></div>
@@ -48,11 +48,11 @@ function Section1() {
                 <span data-aos={`fade-down`} data-aos-delay={`500`} className={`text-white font-sfPro font-bold max-[980px]:text-[32px] text-[48px] leading-[100%] tracking-[0] text-center align-middle`}>Paiement</span>
                 <span data-aos={`fade-down`} data-aos-delay={`1500`} className={`text-white font-sfPro font-normal max-[980px]:text-[20px] text-[24px] leading-[150%] tracking-[0] text-center`}>Résumé de votre sélection</span>
 
-                <div data-aos={`fade-down`} data-aos-delay={`2500`} className={`checkout_card mt-[60px] w-full max-[420px]:h-[1023px] h-[603px]`}>
-                    <div className={`w-full h-full bg-[#FFFFFF14] backdrop-blur-[254px] rounded-[30px] flex max-[420px]:flex-col items-center justify-between`}>
+                <div data-aos={`fade-down`} data-aos-delay={`2500`} className={`checkout_card mt-[60px] w-full max-[710px]:h-[1023px] h-[603px]`}>
+                    <div className={`w-full h-full bg-[#FFFFFF14] backdrop-blur-[254px] rounded-[30px] flex max-[710px]:flex-col items-center justify-between`}>
 
                         {/* LEFT COLUMN */}
-                        <div className={`w-1/2 max-[420px]:w-full h-full flex flex-col items-start max-[980px]:px-[24px] max-[980px]:py-[44px] py-[82px] px-[64px]`}>
+                        <div className={`w-1/2 max-[710px]:w-full h-full flex flex-col items-start max-[980px]:px-[24px] max-[980px]:py-[44px] py-[82px] px-[64px]`}>
                             <div className={`w-full flex items-center justify-between`}>
                                 <span className={`text-white font-sfPro font-[590] max-[980px]:text-[24px] text-[32px] leading-[24px] tracking-[-1.2%]`}>Résumé du forfait</span>
                                 <div className={`w-[95px] h-10 bg-[#443B55] rounded-full centered text-white font-sfPro font-normal text-[16px] leading-[24px] tracking-[-1.2%]`}>Manage</div>
@@ -90,10 +90,10 @@ function Section1() {
                             </div>
                         </div>
 
-                        <div className={`w-[2px] h-full max-[420px]:hidden bg-gradient-to-t from-transparent via-white/20 to-transparent`}></div>
+                        <div className={`w-[2px] h-full max-[710px]:hidden bg-gradient-to-t from-transparent via-white/20 to-transparent`}></div>
 
                         {/* RIGHT COLUMN */}
-                        <div className={`w-1/2 max-[420px]:w-full h-full flex flex-col items-start max-[420px]:py-[10px] max-[980px]:py-[50px] max-[980px]:px-[24px] py-[82px] px-[84px]`}>
+                        <div className={`w-1/2 max-[710px]:w-full h-full flex flex-col items-start max-[710px]:py-[10px] max-[980px]:py-[50px] max-[980px]:px-[24px] py-[82px] px-[84px]`}>
                             <div className={`w-full flex items-center justify-between`}>
                                 <span className={`text-white font-sfPro font-[590] max-[980px]:text-[24px] text-[32px] leading-[24px] tracking-[-1.2%]`}>Résumé du forfait</span>
                             </div>

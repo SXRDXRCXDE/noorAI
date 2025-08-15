@@ -83,7 +83,7 @@ export function Section1() {
     ];
 
     return(
-        <div className={`w-full max-[420px]:h-[calc(804px+467px+100px+600px)] max-[980px]:h-[calc(804px+467px+100px)] h-[calc(804px+467px)] relative `}>
+        <div className={`w-full max-[588px]:h-[calc(804px+467px+100px+600px)] max-[980px]:h-[calc(804px+467px+100px)] h-[calc(804px+467px)] relative `}>
             <div className={`absolute bottom-0 left-0 w-full h-[467px] overflow-hidden`}>
                 <div className={`w-full h-full relative overflow-hidden`}>
                     <div className={`absolute -right-[423px] -bottom-[138px] blur-[824px] w-[972px] h-[972px] rounded-full bg-[#501C6A]`}></div>
@@ -165,7 +165,7 @@ export function Section1() {
 export function Section2() {
     const active = "Location";
     return(
-        <div className={`w-full h-[873px] bg-[#FFFFFF14] relative overflow-hidden`}>
+        <div className={`w-full h-[873px] max-[480px]:h-[973px] bg-[#FFFFFF14] relative overflow-hidden`}>
             <div className={`absolute -left-[288px] bottom-[58px] blur-[804px] w-[972px] h-[972px] rounded-full bg-[#0D496F] `}></div>
             <div className={`absolute -right-[423px] bottom-[257px] blur-[804px] w-[972px] h-[972px] rounded-full bg-[#501C6A] `}></div>
             <div className={`absolute left-0 top-0 w-full h-full flex flex-col items-center  pt-[56px]`}>
@@ -192,30 +192,30 @@ export function Section2() {
                     </div>
 
                 </div>
-                <div data-aos={`fade-down`} data-aos-delay={`1500`} className={'w-full max-w-[1400px] mx-auto max-[420px]:px-[30px] max-[980px]:px-[60px] px-[120px] flex flex-col items-center mt-[59px] gap-[51px] '}>
+                <div data-aos={`fade-down`} data-aos-delay={`1500`} className={'w-full max-w-[1400px] mx-auto max-[550px]:px-[30px] max-[980px]:px-[60px] px-[120px] flex flex-col items-center mt-[59px] gap-[51px] '}>
                     <div className={`w-full flex flex-col items-center `}>
-                        <div className={`w-full flex items-center justify-between text-white font-sfPro font-semibold max-[420px]:text-[13px] text-[24px] leading-[24px] tracking-[-0.012em]`}>
+                        <div className={`w-full flex items-center justify-between text-white font-sfPro font-semibold max-[550px]:text-[13px] text-[24px] leading-[24px] tracking-[-0.012em]`}>
                             <span>Type de formule</span>
                             <span>Durée d’engagement</span>
                             <span>Tarif mensuel</span>
                             <span>Engagemment</span>
                         </div>
-                        <div className={`w-full h-[1px] bg-gradient-to-r from-transparent via-[#E7E7E7] to-transparent max-[420px]:mt-[12px] mt-[31px]`}></div>
+                        <div className={`w-full h-[1px] bg-gradient-to-r from-transparent via-[#E7E7E7] to-transparent max-[550px]:mt-[12px] mt-[31px]`}></div>
                     </div>
                     <div className={`w-full flex flex-col items-center `}>
-                        <div className={`w-full flex items-center justify-between text-white font-sfPro font-semibold max-[420px]:text-[13px] text-[24px] leading-[24px] tracking-[-0.012em]`}>
+                        <div className={`w-full flex items-center justify-between text-white font-sfPro font-semibold max-[550px]:text-[13px] text-[24px] leading-[24px] tracking-[-0.012em]`}>
                             <span >Option-A</span>
                             <span >12 Mois</span>
-                            <span className={`text-[#F6EB13] font-sfPro font-semibold max-[420px]:text-[13px] text-[24px] leading-[24px] tracking-[-0.012em]`}>€17.60/mois</span>
+                            <span className={`text-[#F6EB13] font-sfPro font-semibold max-[550px]:text-[13px] text-[24px] leading-[24px] tracking-[-0.012em]`}>€17.60/mois</span>
                             <span >1  an</span>
                         </div>
                         <div className={`w-full h-[1px] bg-gradient-to-r from-transparent via-[#E7E7E7] to-transparent mt-[31px]`}></div>
                     </div>
                     <div className={`w-full flex flex-col items-center `}>
-                        <div className={`w-full flex items-center justify-between text-white font-sfPro font-semibold max-[420px]:text-[14px] text-[24px] leading-[24px] tracking-[-0.012em]`}>
+                        <div className={`w-full flex items-center justify-between text-white font-sfPro font-semibold max-[550px]:text-[14px] text-[24px] leading-[24px] tracking-[-0.012em]`}>
                             <span>Option-B</span>
                             <span>24 Mois</span>
-                            <span className={`text-[#F6EB13] font-sfPro font-semibold max-[420px]:text-[13px] text-[24px] leading-[24px] tracking-[-0.012em]`}>€9.80/mois</span>
+                            <span className={`text-[#F6EB13] font-sfPro font-semibold max-[550px]:text-[13px] text-[24px] leading-[24px] tracking-[-0.012em]`}>€9.80/mois</span>
                             <span>2 ans</span>
                         </div>
                         <div className={`w-full h-[1px] bg-gradient-to-r from-transparent via-[#E7E7E7] to-transparent mt-[31px]`}></div>
@@ -233,7 +233,7 @@ export function Section2() {
 
 export function Section3() {
     return(
-        <div className={`w-full h-[898px] max-[420px]:h-[2000px] max-[980px]:h-[1450px] relative overflow-hidden`}>
+        <div className={`w-full h-[898px] max-[662px]:h-[2000px] max-[980px]:h-[1450px] relative overflow-hidden`}>
             <div className={`w-full h-full flex flex-col items-center pt-[83px] max-[420px]:px-[10px] max-[1200px]:px-[40px] px-[120px]`}>
 
                 <div data-aos={`fade-down`} data-aos-delay={`500`} className={`w-full flex items-center justify-between `}>
@@ -278,7 +278,7 @@ export function Section3() {
 
                     <GradientBorderButton
                         text={`Tout voir`}
-                        className={`gradient_border_button centered relative text-white w-[358px] h-[69px] mt-[37px]`}
+                        className={`gradient_border_button centered relative text-white max-[400px]:w-[288px] w-[358px] h-[69px] mt-[37px]`}
                         innerDivClass={`w-full h-full bg-[#FFFFFF33] rounded-full centered`}
                         textClassName={`text-[24px] font-sfPro  font-medium leading-[100%] text-center align-middle`}
                     />

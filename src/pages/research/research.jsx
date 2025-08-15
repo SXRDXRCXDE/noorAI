@@ -54,31 +54,31 @@ export function Section1() {
             <div className={`absolute top-0 left-0 w-full h-full bg-[#090732E5] `}></div>
             <div className={`absolute top-[94px] -left-[252px] w-[620px] h-[620px] blur-[804px] bg-[#59051F] rounded-full`}></div>
             <div className={`absolute bottom-[61px] -right-[335px] w-[620px] h-[620px] blur-[804px] bg-[#053D59] rounded-full`}></div>
-            <SvgBlobComponent width={651} height={590} className=" absolute max-[420px]:bottom-[453px] max-[980px]:bottom-[281px] max-[980px]:w-[351px] max-[980px]:h-[290px] max-[1200px]:right-[5px] right-[85px] bottom-[81px] " />
-            <SvgBlobComponent width={602} height={546} className="absolute max-[420px]:bottom-[472px] max-[980px]:bottom-[303px] max-[980px]:w-[302px] max-[980px]:h-[246px] max-[1200px]:right-[30px] right-[110px] bottom-[103px] " />
+            <SvgBlobComponent width={651} height={590} className=" absolute max-[780px]:left-0 max-[780px]:right-0 max-[780px]:m-auto max-[780px]:bottom-[453px] max-[980px]:bottom-[281px] max-[980px]:w-[351px] max-[980px]:h-[290px] max-[1200px]:right-[5px] right-[85px] bottom-[81px] " />
+            <SvgBlobComponent width={602} height={546} className="absolute max-[780px]:left-0 max-[780px]:right-0 max-[780px]:m-auto max-[780px]:bottom-[472px] max-[980px]:bottom-[303px] max-[980px]:w-[302px] max-[980px]:h-[246px] max-[1200px]:right-[30px] right-[110px] bottom-[103px] " />
             <Image
                 data-aos={`zoom-in`} data-aos-delay={`500`}
                 src={studentsPrepare}
                 alt="bg"
-                className="absolute max-[420px]:bottom-[517px] max-[980px]:bottom-[345px] max-[980px]:w-[213px] max-[980px]:h-[213px] max-[1200px]:right-[69px] right-[149px] max-[1200px]:bottom-[155px] bottom-[145px] object-contain max-[1200px]:w-[463px] max-[1200px]:h-[463px] w-[513px] h-[513px]  "
+                className="absolute max-[780px]:left-0 max-[780px]:right-0 max-[780px]:m-auto max-[780px]:bottom-[517px] max-[980px]:bottom-[345px] max-[980px]:w-[213px] max-[980px]:h-[213px] max-[1200px]:right-[69px] right-[149px] max-[1200px]:bottom-[155px] bottom-[145px] object-contain max-[1200px]:w-[463px] max-[1200px]:h-[463px] w-[513px] h-[513px]  "
             />
-            <div className={`absolute left-0 top-0 w-full h-full flex items-start max-[420px]:pt-[412px] pt-[212px] max-[980px]:px-[20px] max-[1300px]:px-[60px] px-[120px] `}>
+            <div className={`absolute left-0 top-0 w-full h-full flex items-start max-[780px]:pt-[412px] pt-[212px] max-[980px]:px-[20px] max-[1300px]:px-[60px] px-[120px] `}>
                 <div className={`max-[1200px]:max-w-[500px] max-[1300px]:max-w-[600px] max-w-[700px] h-full flex flex-col items-start `}>
                     <div className={`w-full flex flex-col items-start`}>
 
-                            <span data-aos={`fade-right`} className={`text-[#00BFFF] font-sfPro font-medium max-[420px]:text-sm max-[1200px]:text-xl text-2xl leading-none tracking-normal align-middle`}>
+                            <span data-aos={`fade-right`} className={`text-[#00BFFF] font-sfPro font-medium max-[780px]:text-sm max-[1200px]:text-xl text-2xl leading-none tracking-normal align-middle`}>
                                 Impact social et pédagogique
                             </span>
-                        <span data-aos={`fade-right`} data-aos-delay={`1000`} className={`mt-[28px] text-white font-sfPro font-bold max-[420px]:text-xl max-[1300px]:text-3xl text-[48px] leading-[120%] tracking-normal`}>
+                        <span data-aos={`fade-right`} data-aos-delay={`1000`} className={`mt-[28px] text-white font-sfPro font-bold max-[780px]:text-xl max-[1300px]:text-3xl text-[48px] leading-[120%] tracking-normal`}>
                                 NoorAI réduit le stress scolaire, renforce la confiance en soi et favorise l’engagement.
                             </span>
-                        <span data-aos={`fade-right`} data-aos-delay={`1500`} className={`mt-[26px] max-[420px]:mt-[13px] text-white font-sfPro font-normal max-[420px]:text-sm text-2xl leading-8 tracking-normal`}>
+                        <span data-aos={`fade-right`} data-aos-delay={`1500`} className={`mt-[26px] max-[780px]:mt-[13px] text-white font-sfPro font-normal max-[780px]:text-sm text-2xl leading-8 tracking-normal`}>
                                 Chaque fonctionnalité est fondée sur des recherches scientifiques rigoureuses, évaluées par des pairs.
                                 Combinaison des dernières avancées en matière de neurosciences, de psychologie cognitive et d'IA éducative pour construire un outil complet.
                             </span>
 
                         <div data-aos={`fade-right`} data-aos-delay={`2000`}>
-                            <GradientButton className={`max-[420px]:w-[258px] max-[420px]:h-[55px] w-[358px] h-[69px] rounded-full mt-[32px] text-white font-sfPro font-medium max-[420px]:tet-[18px] text-[24px] leading-[100%] tracking-[0] align-middle`}>Voir NoorAI en action</GradientButton>
+                            <GradientButton className={`max-[780px]:w-[258px] max-[780px]:h-[55px] w-[358px] h-[69px] rounded-full mt-[32px] text-white font-sfPro font-medium max-[780px]:tet-[18px] text-[24px] leading-[100%] tracking-[0] align-middle`}>Voir NoorAI en action</GradientButton>
                         </div>
 
                     </div>
@@ -152,7 +152,7 @@ export function Section2() {
                 <div data-aos={`fade-down`} data-aos-delay={`2500`}>
                     <GradientBorderButton
                         text={`Tout voir`}
-                        className={`gradient_border_button centered relative text-white w-[358px] h-[69px] max-[980px]:mt-[27px] flex-shrink-0 mt-[57px]`}
+                        className={`gradient_border_button centered relative text-white max-[400px]:w-[290px] w-[358px] h-[69px] max-[980px]:mt-[27px] flex-shrink-0 mt-[57px]`}
                         innerDivClass={`w-full h-full bg-[#FFFFFF33] rounded-full centered`}
                         textClassName={`text-[24px] font-sfPro  font-medium leading-[100%] text-center align-middle`}
                     />
@@ -268,7 +268,7 @@ export function Section4() {
     ];
 
     return(
-        <div className={`w-full h-[1129px] max-[980px]:h-[1429px] max-[420px]:h-[2029px] relative overflow-hidden`}>
+        <div className={`w-full h-[1129px] max-[980px]:h-[1429px] max-[370px]:h-[2090px] max-[675px]:h-[2029px] relative overflow-hidden`}>
 
             <div className={`absolute -right-[259px] -top-[603px] blur-[474px] w-[1027px] h-[1027px] rounded-full bg-[#06303F]`}></div>
             <div className={`absolute -left-[144px] -bottom-[212px] blur-[804px] w-[562px] h-[514px] rounded-full bg-[#053D59]`}></div>
@@ -334,18 +334,18 @@ export function Section5() {
         <div className={`w-full h-[955px] relative overflow-hidden`}>
 
             <div className={`absolute -top-[303px] -left-[144px] w-[562px] h-[514px] rounded-full blur-[804px] bg-[#053D59]`}></div>
-            <SvgBlobComponent width={651} height={590} className="absolute max-[420px]:left-0 max-[420px]:right-0 max-[420px]:m-auto max-[420px]:top-[83px] max-[980px]:w-[351px] max-[980px]:h-[290px] max-[1200px]:right-[10px] right-[80px] top-[183px] " />
-            <SvgBlobComponent width={602} height={546} className="absolute max-[420px]:left-0 max-[420px]:right-0 max-[420px]:m-auto max-[420px]:top-[105px] max-[980px]:w-[302px] max-[980px]:h-[246px] max-[1200px]:right-[36px] right-[106px] top-[205px] " />
+            <SvgBlobComponent width={651} height={590} className="absolute max-[900px]:left-0 max-[900px]:right-0 max-[900px]:m-auto max-[900px]:top-[83px] max-[980px]:w-[351px] max-[980px]:h-[290px] max-[1200px]:right-[10px] right-[80px] top-[183px] " />
+            <SvgBlobComponent width={602} height={546} className="absolute max-[900px]:left-0 max-[900px]:right-0 max-[900px]:m-auto max-[900px]:top-[105px] max-[980px]:w-[302px] max-[980px]:h-[246px] max-[1200px]:right-[36px] right-[106px] top-[205px] " />
             <Image
                 data-aos={`zoom-in`} data-aos-delay={`500`}
                 src={library}
                 alt="bg"
-                className="absolute max-[420px]:left-0 max-[420px]:right-0 max-[420px]:top-20 max-[420px]:m-auto  max-[980px]:w-[383px] max-[980px]:h-[241px] max-[1200px]:right-[15px] right-[125px] top-[220px] object-contain w-[583px] h-[441px]  "
+                className="absolute max-[900px]:left-0 max-[900px]:right-0 max-[900px]:top-20 max-[900px]:m-auto  max-[980px]:w-[383px] max-[980px]:h-[241px] max-[1200px]:right-[15px] right-[125px] top-[220px] object-contain w-[583px] h-[441px]  "
             />
 
 
-            <div className={`absolute left-0 top-0 w-full h-full flex items-start max-[420px]:pt-[360px] max-[980px]:pt-[169px] pt-[269px] max-[420px]:px-[20px] max-[1200px]:px-[60px] px-[120px] `}>
-                <div className={` max-w-[540px] max-[980px]:max-w-[350px] max-[1200px]:max-w-[450px] h-full flex flex-col items-start `}>
+            <div className={`absolute left-0 top-0 w-full h-full flex items-start max-[900px]:pt-[360px] max-[980px]:pt-[169px] pt-[269px] max-[900px]:px-[20px] max-[1200px]:px-[60px] px-[120px] `}>
+                <div className={` min-[900px]:max-w-[540px] max-[900px]:w-full max-[900px]:max-w-full max-[980px]:max-w-[350px] max-[1200px]:max-w-[450px] h-full flex flex-col items-start `}>
                     <div className={`w-full flex flex-col items-start`}>
 
                             <span data-aos={`fade-right`} data-aos-delay={`500`} className={`mt-[28px] text-white font-sfPro font-bold max-[980px]:text-[32px] text-[48px] leading-[120%] tracking-normal`}>
@@ -360,9 +360,9 @@ export function Section5() {
                         <div data-aos={`fade-right`} data-aos-delay={`1500`}>
                             <GradientBorderButton
                                 text={`En savoir plus`}
-                                className={`gradient_border_button centered relative text-white max-[420px]:w-[258px] w-[358px] h-[69px] mt-[72px]`}
+                                className={`gradient_border_button centered relative text-white max-[900px]:w-[258px] w-[358px] h-[69px] mt-[72px]`}
                                 innerDivClass={`w-full h-full bg-[#FFFFFF33] rounded-full centered`}
-                                textClassName={`max-[420px]:text-[20px] text-[24px] font-sfPro  font-medium leading-[100%] text-center align-middle`}
+                                textClassName={`max-[900px]:text-[20px] text-[24px] font-sfPro  font-medium leading-[100%] text-center align-middle`}
                             />
                         </div>
 
